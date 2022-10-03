@@ -1,0 +1,182 @@
+@media screen and (min-width: 768px) {
+    .container {
+        // width: 704px;
+    }
+
+    .cabecalho {
+        box-sizing: border-box;
+        background: none;
+        padding: 16px 32px;
+        
+        &__logo {
+            padding-right: 32px;
+        }
+        
+        & input {
+            background: url(../assets/img/Icone-lupa.svg) no-repeat;
+            background-position: 212px;
+            display: block;
+            background-color: #F5F5F5;
+            border-radius: 20px;
+            box-shadow: none;
+            width: 272px;
+            height: 40px;
+            padding-left: 8px;
+
+            &::placeholder {
+                font-size: 14px;
+                line-height: 16px;
+                position: unset;
+                padding-left: 16px;
+                color: $cinza-claro;
+            }
+        }
+
+        &__botao {
+            width: 132px;
+            left: 74%;
+        }
+    }
+
+    .banner {
+        color: $branco-principal;
+
+        &__texto {
+            left: 32px;
+            bottom: 42px;
+        }
+
+        &__titulo {
+            font-size: 52px;
+            line-height: 61px;
+            padding-bottom: 16px;
+        }
+
+        &__subtitulo {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            padding-bottom: 30px;
+        }
+
+    }
+
+    .produtos {
+        
+        &__header {
+            padding: 32px 32px 16px;
+            background-position: 96% 33px;
+            background-size: 24px;
+        }
+
+        &__botao {
+            font-size: 16px;
+            padding-right: 28px;
+        }
+
+        &__card {
+            padding-bottom: 32px;
+
+        }
+    }
+
+    .card {
+        &__img {
+            width: 164px;
+        }
+
+        &__link {
+            font-size: 16px;
+        }
+    }
+
+    .rodape {
+
+        &__info {
+            text-align: left;
+            padding: 32px;
+            position: relative;
+        }
+
+        &__logo {
+            padding: 0 0 16px;
+        }
+
+        &__sobre {
+            gap: 24px;
+        }
+
+        &__form {
+            padding: 0;
+            text-align: left;
+            color: $cinza-escuro;
+            position: absolute;
+            top: 32px;
+            right: 32px;
+
+            & input {
+                width: 434px;
+
+                &::placeholder {
+                    left: calc(50% - 410px/2);
+                }
+            }
+
+            & label {
+                left: calc(50% - 410px/2);
+                top: 35px;
+            }
+
+            & textarea {
+                width: 434px;
+
+                &::placeholder {
+                    left: calc(50% - 410px/2);
+                }
+            }
+        }
+    }
+
+  //.... Cadastro de produto....
+
+    .botao-adm {
+        width: 152px;
+    }
+
+    .cadastrar-produto {
+        align-items: flex-start;
+        width: 80%;
+        padding: 32px 0;
+        margin: 0 auto;
+
+        &__form {
+
+            & input {
+                width: 80vw;
+            }
+
+            & textarea {
+                width: 80vw;
+            }
+
+        }
+
+        &__botao {
+            width: 80vw;
+        }
+
+    }
+
+    // .....Pagina produtos.....
+
+    .todosOsProdutos {
+        width: 92vw;
+
+        &__cabecalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+}

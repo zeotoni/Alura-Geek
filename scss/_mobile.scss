@@ -1,0 +1,335 @@
+@media screen and (min-width: 0) {
+
+    // ....Página Home......
+
+    .container {
+        // width: 328px;
+    }
+    .cabecalho {
+        margin: 0 auto;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        background: url(../assets/img/Icone-lupa.svg) no-repeat;
+        background-position: calc(96%);
+
+        &__logo {
+            width: 100px;
+            height: 28px;
+        }
+
+        & input {
+            display: none;
+        }
+
+        &__botao {
+            color: $azul-principal;
+            width: 99px;
+            font-size: 14px;
+            position: absolute;
+            left: calc(42%);
+        }
+    }
+
+    .banner {
+        position: relative;
+        width: 100%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(../assets/img/hero.jpg) no-repeat center;        
+        background-size: cover;
+        height: 50vw;
+        color: $branco-principal;
+
+        &__texto {
+            position: absolute;
+            left: 16px;
+            bottom: 30px;
+        }
+
+        &__titulo {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            padding-bottom: 8px;
+        }
+
+        &__subtitulo {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            padding-bottom: 20px;
+        }
+
+        &__botao {
+            color: $branco-principal;
+            background-color: $azul-principal;
+            font-size: 14px;
+        }
+    }
+    
+    .produtos {
+        
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px;
+            align-items: center;
+            background: url(../assets/img/icone-seta.svg) no-repeat;
+            background-position: 96%;
+            background-size: 18px;
+        }
+
+        &__titulo {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            color: $cinza-escuro;
+        }
+
+        &__botao {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            color: $azul-principal;
+            padding-right: 33px;
+        }
+
+        &__card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding-bottom: 16px;
+            justify-content: center;
+
+            .card:nth-child(6) {
+                display: none;
+            }
+
+            .card:nth-child(5) {
+                display: none;
+            }
+        }
+    }
+
+    .rodape {
+        background-color: $bg-azul;
+
+        &__info {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        &__logo {
+            width: 176px;
+            height: 50px;
+            padding: 16px 0;
+        }
+
+        &__sobre {
+            gap: 16px;
+            display: flex;
+            flex-direction: column;
+
+            &-item a {
+                color: $cinza-escuro;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+
+        &__form {
+            padding: 32px 16px;
+            text-align: left;
+            color: $cinza-escuro;
+            position: relative;
+
+            &-titulo {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: $cinza-escuro;
+                padding-bottom: 8px;
+            }
+
+            & input {
+                width: 328px;
+                height: 56px;
+                margin-bottom: 16px;
+            }
+
+            & label {
+                position: absolute;
+                left: 31px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 26px;
+                color: $cinza-claro;
+            }
+
+            & textarea {
+                width: 328px;
+                height: 82px;
+                margin-bottom: 8px;
+            }
+
+            &-botao {
+                background-color: $azul-principal;
+                color: $branco-principal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 16px;
+                padding: 11px 14px;
+            }
+        }
+
+        &__desenvolvedor {
+            background-color: $branco-principal;
+            line-height: 19px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 32px;
+        }
+    }
+
+    //..... Página Login.....
+
+    .login {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 97px 0 76px;
+        gap: 16px;
+
+        &__titulo {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: $cinza-escuro;
+        }
+
+        & input {
+            width: 275px;
+            height: 41px;
+            margin-bottom: 16px;
+
+            &::placeholder {
+                left: 12px;
+                top: 14px;
+            }
+        }
+
+        &__botao {
+            width: 109px;
+            height: 40px;
+            background-color: $azul-principal;
+            color: $branco-principal;
+            margin: 0 auto;
+        }
+    }
+
+    //.... Cadastro de produto....
+
+    .botao-adm {
+        width: 152px;
+        line-height: 16px;
+        padding: 11px 6px;
+        left: calc(39%);
+    }
+
+    .cadastrar-produto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px 0;
+
+        &__titulo {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;  
+            color: $cinza-escuro;  
+            padding-bottom: 16px;        
+        }
+
+        &__form {
+            & label {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: $cinza-claro;
+                position: absolute;
+                padding: 8px 0 0 12px;
+            }
+
+            & input {
+                width: 328px;
+                height: 56px;
+                margin-bottom: 16px;
+                padding-top: 18px;
+    
+                &::placeholder {
+                    left: 12px;
+                    top: 30px;
+                }
+            }
+
+            & textarea {
+                width: 328px;
+                height: 82px;
+                padding-top: 18px;
+                margin-bottom: 16px;
+
+                &::placeholder {
+                    left: 12px;
+                }
+            }
+
+        }
+
+        &__botao {
+            width: 328px;
+            height: 51px;
+            background-color: $azul-principal;
+            color: $branco-principal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        
+
+    }
+
+    // .....Pagina produtos.....
+
+    .todosOsProdutos {
+        width: 92vw;
+        margin: 0 auto;
+        padding: 32px 0;
+
+        &__titulo {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            color: $cinza-escuro;
+            padding-bottom: 16px;
+        }
+
+        &__botao {
+            color: $branco-principal;
+            background-color: $azul-principal;
+            width: 152px;
+            height: 40px;
+            margin-bottom: 16px;
+        }
+
+        &__produtos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+
+        }
+    }
+}
