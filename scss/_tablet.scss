@@ -176,7 +176,33 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding-bottom: 16px;
         }
+
+        &__titulo {
+            padding-bottom: 0;
+        }
+    }
+
+     //..... Página descricao do produto....
+
+     .produto-descricao {
+        display: flex;
+        padding: 32px;
+
+        &__img {
+            width: 254px;
+            height: 157px;
+        }
+
+        &__descricao {
+            padding: 0 0 0 16px;
+        }
+
+    }
+
+    .produtos__similares {
+        padding: 32px 0;
     }
 
 }

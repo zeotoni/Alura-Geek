@@ -309,20 +309,24 @@
         margin: 0 auto;
         padding: 32px 0;
 
+        &__cabecalho {
+            padding-bottom: 23px;
+        }
+
         &__titulo {
             font-weight: 700;
             font-size: 22px;
             line-height: 26px;
             color: $cinza-escuro;
-            padding-bottom: 16px;
+            padding-bottom: 22px;
         }
 
         &__botao {
             color: $branco-principal;
             background-color: $azul-principal;
-            width: 152px;
-            height: 40px;
-            margin-bottom: 16px;
+            padding: 11px 18px;
+            font-size: 14px;
+            line-height: 16px;
         }
 
         &__produtos {
@@ -330,6 +334,80 @@
             flex-wrap: wrap;
             gap: 16px;
 
+            .card {
+                position: relative;
+
+                &__icons {
+                    position: absolute;
+                    right: 8px;
+                    top: 8px;
+                }
+            }
+
+        }
+    }
+
+    //..... Página descricao do produto....
+
+    .produto-descricao {
+
+        color: $cinza-escuro;
+
+        &__img {
+            width: 100vw;
+            height: 50vw;
+        }
+
+        &__descricao {
+            padding: 16px;
+        }
+
+        &__titulo {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 26px;
+            padding-bottom: 8px;
+        }
+
+        &__preco {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &__detalhes {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            padding-top: 8px;
+        }
+    }
+
+    .produtos__similares {
+        width: 92vw;
+        margin: 0 auto;
+        padding: 16px 0;
+        color: $cinza-escuro;
+
+        &__titulo {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            padding-bottom: 16px;
+        }
+
+        &-card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+
+            .card:nth-child(6) {
+                display: none;
+            }
+
+            .card:nth-child(5) {
+                display: none;
+            }
         }
     }
 }

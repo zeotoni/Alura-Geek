@@ -194,8 +194,9 @@
         &__botao {
             color: $branco-principal;
             background-color: $azul-principal;
-            width: 164px;
-            height: 51px;
+            font-size: 16px;
+            line-height: 19px;
+            padding: 15px 13.5px;
         }
 
         &__produtos {
@@ -203,6 +204,68 @@
             gap: 16px;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 
+        }
+    }
+
+    //..... Página descricao do produto....
+
+    .produto-descricao {
+        
+        padding: 64px 152px;
+        align-items: center;
+
+        &__img {
+            width: 560px;
+            height: 403px;
+        }
+
+        &__titulo {
+            font-weight: 500;
+            font-size: 52px;
+            line-height: 61px;
+        }
+
+        &__preco {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &__detalhes {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    .produtos__similares {
+        width: 1064px;
+        margin: 0 auto;
+        padding: 64px 0;
+        color: $cinza-escuro;
+
+        &__titulo {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        &-card {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            & a {
+                font-size: 16px;
+            }
+
+            .card:nth-child(6) {
+                display: flex;
+            }
+
+            .card:nth-child(5) {
+                display: flex;
+            }
         }
     }
 }
