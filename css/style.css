@@ -48,6 +48,7 @@ input {
   box-sizing: border-box;
   background-color: #ffffff;
   padding-left: 10px;
+  padding-top: 15px;
   font-size: 16px;
 }
 input::placeholder {
@@ -55,7 +56,7 @@ input::placeholder {
   font-weight: 400;
   color: #464646;
   position: absolute;
-  left: calc(50% - 49px - 100px);
+  left: 12px;
   top: 30px;
 }
 
@@ -66,6 +67,7 @@ textarea {
   box-sizing: border-box;
   background-color: #ffffff;
   padding-left: 10px;
+  padding-top: 15px;
   font-size: 16px;
 }
 textarea::placeholder {
@@ -73,7 +75,7 @@ textarea::placeholder {
   font-weight: 400;
   color: #A2A2A2;
   position: absolute;
-  left: calc(50% - 49px - 100px);
+  left: 12px;
   top: 20px;
 }
 
@@ -151,7 +153,7 @@ textarea::placeholder {
     font-size: 14px;
     line-height: 16px;
     color: #2A7AE4;
-    padding-right: 33px;
+    margin-right: 5%;
   }
   .produtos__card {
     display: flex;
@@ -204,7 +206,7 @@ textarea::placeholder {
     padding-bottom: 8px;
   }
   .rodape__form input {
-    width: 328px;
+    width: 91vw;
     height: 56px;
     margin-bottom: 16px;
   }
@@ -217,7 +219,7 @@ textarea::placeholder {
     color: #A2A2A2;
   }
   .rodape__form textarea {
-    width: 328px;
+    width: 91vw;
     height: 82px;
     margin-bottom: 8px;
   }
@@ -262,6 +264,7 @@ textarea::placeholder {
   .login__botao {
     width: 109px;
     height: 40px;
+    font-size: 14px;
     background-color: #2A7AE4;
     color: #ffffff;
     margin: 0 auto;
@@ -425,13 +428,14 @@ textarea::placeholder {
     box-shadow: none;
     width: 272px;
     height: 40px;
-    padding-left: 8px;
+    padding-left: 15px;
+    padding-top: 5px;
   }
   .cabecalho input::placeholder {
     font-size: 14px;
     line-height: 16px;
     position: unset;
-    padding-left: 16px;
+    padding-left: 12px;
     color: #A2A2A2;
   }
   .cabecalho__botao {
@@ -458,12 +462,12 @@ textarea::placeholder {
   }
   .produtos__header {
     padding: 32px 32px 16px;
-    background-position: 96% 33px;
-    background-size: 24px;
+    background-position: 96% 34px;
+    background-size: 22px;
   }
   .produtos__botao {
     font-size: 16px;
-    padding-right: 28px;
+    margin-right: 3.5%;
   }
   .produtos__card {
     padding-bottom: 32px;
@@ -573,12 +577,17 @@ textarea::placeholder {
     border-radius: 20px;
     box-shadow: none;
     width: 393px;
-    padding-left: 8px;
+    padding-left: 17px;
   }
   .cabecalho__botao {
     width: 148px;
     font-size: 16px;
     left: 74%;
+  }
+  .cabecalho__botao:hover {
+    padding: 16px 20px;
+    transition: 0.5s;
+    font-size: 18px;
   }
   .banner {
     height: 352px;
@@ -592,19 +601,37 @@ textarea::placeholder {
     width: 130px;
     padding: 16px;
   }
+  .banner__botao:hover {
+    padding: 18px;
+    transition: 0.5s;
+    font-size: 18px;
+  }
   .produtos__header {
     padding: 64px 0 16px;
-    background-position: 100% 65px;
+    background-position: 100% 66px;
     background-size: 22px;
   }
   .produtos__titulo {
     font-size: 32px;
+  }
+  .produtos__botao {
+    margin-right: 2%;
+  }
+  .produtos__botao:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+    font-size: 18px;
   }
   .produtos__card {
     padding-bottom: 0;
   }
   .produtos .card__img {
     width: 176px;
+  }
+  .produtos .card a:hover {
+    transition: 0.5s;
+    font-size: 18px;
+    text-decoration: underline;
   }
   .produtos .card:nth-child(6) {
     display: flex;
@@ -619,6 +646,11 @@ textarea::placeholder {
     padding: 64px;
     display: flex;
     justify-content: space-between;
+  }
+  .rodape__sobre a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+    font-size: 18px;
   }
   .rodape__form {
     padding: 0;
@@ -647,6 +679,12 @@ textarea::placeholder {
     width: 165px;
     padding: 16px;
   }
+  .rodape__form-botao:hover {
+    transition: 0.5s;
+    width: 185px;
+    padding: 20px;
+    cursor: pointer;
+  }
   .login__titulo {
     font-size: 18px;
     line-height: 21px;
@@ -661,6 +699,13 @@ textarea::placeholder {
   .login__botao {
     width: 423px;
     height: 62px;
+    font-size: 18px;
+  }
+  .login__botao:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 0.5s;
+    font-size: 20px;
   }
   .botao-adm {
     width: 181px;
@@ -683,6 +728,12 @@ textarea::placeholder {
   .cadastrar-produto__botao {
     width: 559px;
   }
+  .cadastrar-produto__botao:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+    font-size: 18px;
+    cursor: pointer;
+  }
   .todosOsProdutos {
     width: 1064px;
     margin: 0 auto;
@@ -700,10 +751,19 @@ textarea::placeholder {
     line-height: 19px;
     padding: 15px 13.5px;
   }
+  .todosOsProdutos__botao:hover {
+    padding: 20px;
+    transition: 0.5s;
+  }
   .todosOsProdutos__produtos {
     display: grid;
     gap: 16px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .todosOsProdutos__produtos .card__link:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+    font-size: 18px;
   }
   .produto-descricao {
     padding: 64px 152px;
@@ -746,6 +806,11 @@ textarea::placeholder {
   }
   .produtos__similares-card a {
     font-size: 16px;
+  }
+  .produtos__similares-card a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+    font-size: 18px;
   }
   .produtos__similares-card .card:nth-child(6) {
     display: flex;

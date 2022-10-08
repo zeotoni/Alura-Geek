@@ -91,7 +91,7 @@
             font-size: 14px;
             line-height: 16px;
             color: $azul-principal;
-            padding-right: 33px;
+            margin-right: calc(5%);
         }
 
         &__card {
@@ -154,7 +154,7 @@
             }
 
             & input {
-                width: 328px;
+                width: 91vw;
                 height: 56px;
                 margin-bottom: 16px;
             }
@@ -169,7 +169,7 @@
             }
 
             & textarea {
-                width: 328px;
+                width: 91vw;
                 height: 82px;
                 margin-bottom: 8px;
             }
@@ -224,6 +224,7 @@
         &__botao {
             width: 109px;
             height: 40px;
+            font-size: 14px;
             background-color: $azul-principal;
             color: $branco-principal;
             margin: 0 auto;
