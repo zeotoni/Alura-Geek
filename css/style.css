@@ -559,6 +559,10 @@ textarea::placeholder {
   }
 }
 @media screen and (min-width: 1280px) {
+  .container {
+    width: 1136px;
+    margin: 0 auto;
+  }
   .cabecalho {
     padding: 32px 152px;
   }
@@ -606,8 +610,6 @@ textarea::placeholder {
     padding: 64px 0 16px;
     background-position: 100% 66px;
     background-size: 22px;
-    width: 1136px;
-    margin: 0 auto;
   }
   .produtos__titulo {
     font-size: 32px;
@@ -622,6 +624,7 @@ textarea::placeholder {
   }
   .produtos__card {
     padding-bottom: 0;
+    justify-content: unset;
   }
   .produtos .card__img {
     width: 176px;

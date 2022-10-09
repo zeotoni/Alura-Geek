@@ -1,7 +1,7 @@
 @media screen and (min-width: 1280px) {
     .container {
-        // width: 1136px;
-        // margin: 0 auto;
+        width: 1136px;
+        margin: 0 auto;
     }
     .cabecalho {
         padding: 32px 152px;
@@ -61,8 +61,6 @@
             padding: 64px 0 16px;
             background-position: 100% 66px;
             background-size: 22px;
-            width: 1136px;
-            margin: 0 auto;
         }
 
         &__titulo {
@@ -82,6 +80,7 @@
 
         &__card {
             padding-bottom: 0;
+            justify-content: unset;
         }
 
         .card {
