@@ -624,7 +624,8 @@ textarea::placeholder {
   }
   .produtos__card {
     padding-bottom: 0;
-    justify-content: unset;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   .produtos .card__img {
     width: 176px;
