@@ -559,10 +559,6 @@ textarea::placeholder {
   }
 }
 @media screen and (min-width: 1280px) {
-  .container {
-    width: 1136px;
-    margin: 0 auto;
-  }
   .cabecalho {
     padding: 32px 152px;
   }
@@ -606,10 +602,16 @@ textarea::placeholder {
     transition: 0.5s;
     font-size: 18px;
   }
+  .produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .produtos__header {
     padding: 64px 0 16px;
     background-position: 100% 66px;
     background-size: 22px;
+    width: 1136px;
   }
   .produtos__titulo {
     font-size: 32px;
