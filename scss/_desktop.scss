@@ -56,14 +56,13 @@
     }
 
     .produtos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         
         &__header {
             padding: 64px 0 16px;
             background-position: 100% 66px;
             background-size: 22px;
+            width: 1136px;
+            margin: 0 auto;
         }
 
         &__titulo {
