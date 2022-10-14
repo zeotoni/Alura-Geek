@@ -28,9 +28,7 @@
         }
 
         &__botao:hover {
-            padding: 16px 20px;
-            transition: 0.5s;
-            font-size: 18px;
+            @include animaBotao($branco-principal);
         }
     }
 
@@ -49,9 +47,7 @@
         }
 
         &__botao:hover {
-            padding: 18px;
-            transition: 0.5s;
-            font-size: 18px;
+            @include animaBotao($azul-principal);
         }
     }
 
@@ -61,6 +57,7 @@
             padding: 64px 0 16px;
             background-position: 100% 66px;
             background-size: 22px;
+            max-width: unset;
         }
 
         &__titulo {
@@ -157,9 +154,7 @@
                 padding: 16px;
 
                 &:hover {
-                    transition: 0.5s;
-                    width: 185px;
-                    padding: 20px;
+                    @include animaBotao($azul-principal);
                     cursor: pointer;
                 }
             }
@@ -192,9 +187,7 @@
 
             &:hover {
                 cursor: pointer;
-                text-decoration: underline;
-                transition: 0.5s;
-                font-size: 20px;
+                @include animaBotao($azul-principal);
             }
         }
     }
@@ -231,9 +224,7 @@
             width: 559px;
 
             &:hover {
-                transition: 0.5s;
-                text-decoration: underline;
-                font-size: 18px;
+                @include animaBotao($azul-principal);
                 cursor: pointer;
             }
         }
@@ -260,8 +251,7 @@
             padding: 15px 13.5px;
 
             &:hover {
-                padding: 20px;
-                transition: 0.5s;
+                @include animaBotao($azul-principal);
             }
         }
 

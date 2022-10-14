@@ -60,6 +60,21 @@ input::placeholder {
   top: 30px;
 }
 
+.input-mensagem-erro {
+  display: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.input-container--invalido .input {
+  border: 1px solid #df2525;
+}
+
+.input-container--invalido .input-mensagem-erro {
+  color: #df2525;
+  display: block;
+}
+
 textarea {
   border: 1px solid #FFFFFF;
   box-shadow: 0px 10px 5px -7px rgba(117, 113, 117, 0.22);
@@ -255,11 +270,23 @@ textarea::placeholder {
   .login input {
     width: 275px;
     height: 41px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
   .login input::placeholder {
     left: 12px;
     top: 14px;
+  }
+  .login .input-mensagem-erro {
+    display: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .login .input-container--invalido .input {
+    border: 1px solid #df2525;
+  }
+  .login .input-container--invalido .input-mensagem-erro {
+    color: #df2525;
+    display: block;
   }
   .login__botao {
     width: 109px;
@@ -464,6 +491,8 @@ textarea::placeholder {
     padding: 32px 32px 16px;
     background-position: 96% 34px;
     background-size: 22px;
+    margin: 0 auto;
+    max-width: 704px;
   }
   .produtos__botao {
     font-size: 16px;
@@ -585,9 +614,9 @@ textarea::placeholder {
     left: 74%;
   }
   .cabecalho__botao:hover {
-    padding: 16px 20px;
     transition: 0.5s;
-    font-size: 18px;
+    background-color: #5595E9;
+    color: #ffffff;
   }
   .banner {
     height: 352px;
@@ -602,14 +631,15 @@ textarea::placeholder {
     padding: 16px;
   }
   .banner__botao:hover {
-    padding: 18px;
     transition: 0.5s;
-    font-size: 18px;
+    background-color: #D4E4FA;
+    color: #2A7AE4;
   }
   .produtos__header {
     padding: 64px 0 16px;
     background-position: 100% 66px;
     background-size: 22px;
+    max-width: unset;
   }
   .produtos__titulo {
     font-size: 32px;
@@ -683,8 +713,8 @@ textarea::placeholder {
   }
   .rodape__form-botao:hover {
     transition: 0.5s;
-    width: 185px;
-    padding: 20px;
+    background-color: #D4E4FA;
+    color: #2A7AE4;
     cursor: pointer;
   }
   .login__titulo {
@@ -705,9 +735,9 @@ textarea::placeholder {
   }
   .login__botao:hover {
     cursor: pointer;
-    text-decoration: underline;
     transition: 0.5s;
-    font-size: 20px;
+    background-color: #D4E4FA;
+    color: #2A7AE4;
   }
   .botao-adm {
     width: 181px;
@@ -732,8 +762,8 @@ textarea::placeholder {
   }
   .cadastrar-produto__botao:hover {
     transition: 0.5s;
-    text-decoration: underline;
-    font-size: 18px;
+    background-color: #D4E4FA;
+    color: #2A7AE4;
     cursor: pointer;
   }
   .todosOsProdutos {
@@ -754,8 +784,9 @@ textarea::placeholder {
     padding: 15px 13.5px;
   }
   .todosOsProdutos__botao:hover {
-    padding: 20px;
     transition: 0.5s;
+    background-color: #D4E4FA;
+    color: #2A7AE4;
   }
   .todosOsProdutos__produtos {
     display: grid;

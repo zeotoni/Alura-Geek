@@ -22,12 +22,14 @@
         <h2 class="login__titulo">Iniciar Sessão</h2>
         <form action="submit" class="login__form">
             <div>
-                <input aria-label="email" class="input-" type="email" placeholder="Escreva seu email" data-tipo="email" required>
+                <input aria-label="email" class="input" type="email" placeholder="Escreva seu email" data-tipo="email" required>
+                <span class="input-mensagem-erro">Este campo não está válido</span>
             </div>
             <div>
-                <input aria-label="senha" class="input-" type="password" placeholder="Escreva sua senha"  data-tipo="senha" required>
+                <input aria-label="senha" class="input" type="password" placeholder="Escreva sua senha"  data-tipo="senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" required>
+                <span class="input-mensagem-erro">Este campo não está válido</span>
             </div>
-            <button type="submit" class="login__botao botao">Entrar</button>
+            <button type="submit" class="login__botao botao" data-tipo="botao">Entrar</button>
         </form>
        </section>
     </main>
@@ -43,20 +45,24 @@
                 <li class="rodape__sobre-item"><a href="#">Anuncie aqui</a></li>
             </ul>
             <div class="rodape__form">
+               <form action="submit">
                 <h3 class="rodape__form-titulo">Fale conosco</h3>
-                <div class="input-nome">
-                    <label for="input-nome" class="nome">Nome</label>
-                    <input type="text"id="input-nome" placeholder="André Lisboa">
+                <div>
+                    <label for="input-nome" >Nome</label>
+                    <input type="text" class="input" data-tipo="nome" placeholder="André Lisboa" required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
                 </div>
-                <div class="input-text">
-                    <textarea id="input-mensagem"  placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem"></textarea>
+                <div>
+                    <textarea placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem" required></textarea>
                 </div>
                 <button type="submit" class="rodape__form-botao botao">Enviar mensagem</button>
+               </form>
             </div>
         </div>      
         <section class="rodape__desenvolvedor">
             <h4>Desenvolvido por Ezequiel Otoni<br>2022</h4>
         </section>
     </footer>
+    <script src="../js/login.js" type="module"></script>
 </body>
 </html>

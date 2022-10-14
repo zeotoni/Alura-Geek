@@ -4,6 +4,7 @@ $cinza-claro: #A2A2A2;
 $cinza-escuro: #464646;
 $bg-cinza: #F5F5F5;
 $bg-azul: #EAF2FD;
+$vermelho-erro: #df2525;
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -11,4 +12,19 @@ body {
 
 main {
     background-color: $bg-cinza;
+}
+
+
+@mixin animaBotao($bgColor) {
+    @if $bgColor == $azul-principal {
+        transition: 0.5s;
+        background-color: #D4E4FA;
+        color: $azul-principal;
+
+    }@else if $bgColor == $branco-principal{
+        transition: 0.5s;
+        background-color: #5595E9;
+        color: $branco-principal;
+    }
+    
 }
