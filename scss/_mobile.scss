@@ -101,12 +101,16 @@
             padding-bottom: 16px;
             justify-content: center;
 
-            .card:nth-child(6) {
+            &:nth-child(6) {
                 display: none;
             }
 
-            .card:nth-child(5) {
+            &:nth-child(5) {
                 display: none;
+            }
+
+            .card {
+                width: 164px;
             }
         }
     }
@@ -219,21 +223,6 @@
                 left: 12px;
                 top: 14px;
             }
-        }
-
-        .input-mensagem-erro {
-            display: none;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-
-        .input-container--invalido .input {
-            border: 1px solid $vermelho-erro;
-        }
-        
-        .input-container--invalido .input-mensagem-erro {
-            color: $vermelho-erro;
-            display: block;
         }
         
         &__botao {

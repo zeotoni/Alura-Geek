@@ -1,0 +1,166 @@
+{
+    "produtos": [
+        {   
+            "categoria": "star wars",
+            "img": "./assets/img/produto1.png",
+            "alt": "Imagem de uma caneca de star wars",
+            "titulo": "Caneca Cerâmica 3d Stormtrooper",
+            "preco": "R$ 54,79",
+            "link": "Ver Produto",
+            "id": 1
+        },
+        {
+            "categoria": "star wars",
+            "img": "./assets/img/produto2.png",
+            "alt": "Imagem de uma estátua de lego do Darth Vader",
+            "titulo": "LEGO Star Wars - Capacete de Darth Vader",
+            "preco": "R$ 587,90",
+            "link": "Ver Produto",
+            "id": 2
+        },
+        {
+            "categoria": "star wars",
+            "img": "./assets/img/produto3.png",
+            "alt": "Imagem de uma action figure do mestre yoda",
+            "titulo": "Action Figure Star Wars - Mestre Yoda",
+            "preco": "R$ 79,95",
+            "link": "Ver Produto",
+            "id": 3
+        },
+        {
+            "categoria": "star wars",
+            "img": "./assets/img/produto4.png",
+            "alt": "Imagem de uma action figure de stormtrooper",
+            "titulo": "Action Figure Star Wars - StormTrooper",
+            "preco": "R$ 65,00",
+            "link": "Ver Produto",
+            "id": 4
+        },
+        {
+            "categoria": "star wars",
+            "img": "./assets/img/produto5.png",
+            "alt": "Imagem de uma action figure do Baby Yoda Star Wars",
+            "titulo": "Action Figure Star Wars - Baby Yoda",
+            "preco": "R$ 300,00",
+            "link": "Ver Produto",
+            "id": 5
+        },
+        {
+            "categoria": "star wars",
+            "img": "./assets/img/produto6.png",
+            "alt": "Imagem de uma action figure do Kylo Ren",
+            "titulo": "Action Figure Star Wars - Kylo Ren",
+            "preco": "R$ 299,00",
+            "link": "Ver Produto",
+            "id": 6
+        },
+        {
+            "categoria": "consoles",
+            "img": "./assets/img/produto13.png",
+            "alt": "Imagem de um controle de xbox",
+            "titulo": "Controle Sem Fio Xbox One Branco Com Bluetooth",
+            "preco": "R$ 259,20",
+            "link": "Ver Produto",
+            "id": 7
+        },
+        {
+            "categoria": "consoles",
+            "img": "./assets/img/produto14.png",
+            "alt": "Imagem de um console nintendo NES",
+            "titulo": "Console Nintendo NES 8 Bits",
+            "preco": "R$ 1.186,00",
+            "link": "Ver Produto",
+            "id": 8
+        },
+        {
+            "categoria": "consoles",
+            "img": "./assets/img/produto15.png",
+            "alt": "Imagem de um console playstation 5",
+            "titulo": "Console PlayStation 5",
+            "preco": "R$ 5.499,90",
+            "link": "Ver Produto",
+            "id": 9
+        },
+        {
+            "categoria": "consoles",
+            "img": "./assets/img/produto16.png",
+            "alt": "Imagem de controle do nintendo Switch",
+            "titulo": "Controle para Nintendo Switch - Vermelho e Azul",
+            "preco": "R$ 299,90",
+            "link": "Ver Produto",
+            "id": 10
+        },
+        {
+            "categoria": "consoles",
+            "img": "./assets/img/produto17.png",
+            "alt": "Imagem de um console xbox series x",
+            "titulo": "Console Xbox Series X",
+            "preco": "R$ 3.999,00",
+            "link": "Ver Produto",
+            "id": 11
+        },
+        {
+            "categoria": "consoles",
+            "img": "./assets/img/produto18.png",
+            "alt": "Imagem de um Nintendo Game Boy Color",
+            "titulo": "Nintendo Game Boy Color",
+            "preco": "R$ 619,50",
+            "link": "Ver Produto",
+            "id": 12
+        },
+        {
+            "categoria": "diversos",
+            "img": "./assets/img/produto7.png",
+            "alt": "Imagem de uma camiseta atari",
+            "titulo": "Camiseta Atari",
+            "preco": "R$ 59,00",
+            "link": "Ver Produto",
+            "id": 13
+        },
+        {
+            "categoria": "diversos",
+            "img": "./assets/img/produto8.png",
+            "alt": "Imagem de uma camiseta nintendo joystick",
+            "titulo": "Camiseta Nintendo Joystick",
+            "preco": "R$ 49,00",
+            "link": "Ver Produto",
+            "id": 14
+        },
+        {
+            "categoria": "diversos",
+            "img": "./assets/img/produto9.png",
+            "alt": "Imagem de um action figure do sonic",
+            "titulo": "Action Figure Sonic",
+            "preco": "R$ 459,00",
+            "link": "Ver Produto",
+            "id": 15
+        },
+        {
+            "categoria": "diversos",
+            "img": "./assets/img/produto10.png",
+            "alt": "Imagem de um radio relógio retrô rosa",
+            "titulo": "Rádio Relógio Retrô Rosa",
+            "preco": "R$ 135,00",
+            "link": "Ver Produto",
+            "id": 16
+        },
+        {
+            "categoria": "diversos",
+            "img": "./assets/img/produto11.png",
+            "alt": "Imagem de um Sony Playstation Vr",
+            "titulo": "Sony Playstation Vr",
+            "preco": "R$ 4.499,99",
+            "link": "Ver Produto",
+            "id": 17
+        },
+        {
+            "categoria": "diversos",
+            "img": "./assets/img/produto12.png",
+            "alt": "Imagem de uma fantasia mascote do pikachu",
+            "titulo": "Fantasia Mascote Pikachu",
+            "preco": "R$ 245,64",
+            "link": "Ver Produto",
+            "id": 18
+        }
+    ]
+}

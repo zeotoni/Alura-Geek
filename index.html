@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body onload="exibeCards()">
     <header class="cabecalho">
         <img class="cabecalho__logo" src="../assets/img/Logo.svg" alt="logo da AluraGeek">
         <input type="search" placeholder="O que deseja encontrar?">
@@ -32,43 +32,7 @@
                     <h2 class="produtos__titulo">Star Wars</h2>
                     <a href="#" class="produtos__botao">Ver Tudo</a>
                 </div>
-                <div class="produtos__card">
-                    <div class="card">
-                        <img src="../assets/img/produto1.png" alt="Imagem de caneca geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href="./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/produto2.png" alt="Imagem de umproduto da Alura Geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href="./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/produto3.png" alt="Imagem de umproduto da Alura Geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href="./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/produto4.png" alt="Imagem de umproduto da Alura Geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href="./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/produto5.png" alt="Imagem de umproduto da Alura Geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href="./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/produto6.png" alt="Imagem de umproduto da Alura Geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href=./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
+                <div class="produtos__card" data-tipo="starWars">
                 </div>
             </section>
             <section class="produtos">
@@ -76,43 +40,7 @@
                     <h2 class="produtos__titulo">Consoles</h2>
                     <a href="#" class="produtos__botao">Ver Tudo</a>
                 </div>
-                <div class="produtos__card">
-                    <div class="card">
-                        <img src="../assets/img/produto13.png" alt="Imagem de caneca geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href="./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/produto14.png" alt="Imagem de umproduto da Alura Geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href="./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/produto15.png" alt="Imagem de umproduto da Alura Geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href="./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/produto16.png" alt="Imagem de umproduto da Alura Geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href="./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/produto17.png" alt="Imagem de umproduto da Alura Geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href="./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/produto18.png" alt="Imagem de umproduto da Alura Geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href=./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
+                <div class="produtos__card" data-tipo="consoles">
                 </div>
             </section>
             <section class="produtos">
@@ -120,43 +48,7 @@
                     <h2 class="produtos__titulo">Diversos</h2>
                     <a href="#" class="produtos__botao">Ver Tudo</a>
                 </div>
-                <div class="produtos__card">
-                    <div class="card">
-                        <img src="../assets/img/produto7.png" alt="Imagem de caneca geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href="./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/produto8.png" alt="Imagem de umproduto da Alura Geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href="./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/produto9.png" alt="Imagem de umproduto da Alura Geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href="./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/produto10.png" alt="Imagem de umproduto da Alura Geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href="./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/produto11.png" alt="Imagem de umproduto da Alura Geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href="./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/produto12.png" alt="Imagem de umproduto da Alura Geek" class="card__img">
-                        <h3 class="card__nome">Produto XYZ</h3>
-                        <span class="card__preco">R$ 60,00</span>
-                        <a href=./html/produto-descricao.html" class="card__link">Ver produto</a>
-                    </div>
+                <div class="produtos__card" data-tipo="diversos">
                 </div>
             </section>
         </section>
@@ -173,20 +65,24 @@
                 <li class="rodape__sobre-item"><a href="#">Anuncie aqui</a></li>
             </ul>
             <div class="rodape__form">
+               <form action="submit">
                 <h3 class="rodape__form-titulo">Fale conosco</h3>
-                <div class="input-nome">
-                    <label for="input-nome" class="nome">Nome</label>
-                    <input type="text"id="input-nome" placeholder="André Lisboa">
+                <div>
+                    <label for="input-nome" >Nome</label>
+                    <input type="text" class="input" data-tipo="nome" placeholder="André Lisboa" required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
                 </div>
-                <div class="input-text">
-                    <textarea id="input-mensagem"  placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem"></textarea>
+                <div>
+                    <textarea placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem" required></textarea>
                 </div>
                 <button type="submit" class="rodape__form-botao botao">Enviar mensagem</button>
+               </form>
             </div>
         </div>      
         <section class="rodape__desenvolvedor">
             <h4>Desenvolvido por Ezequiel Otoni<br>2022</h4>
         </section>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>

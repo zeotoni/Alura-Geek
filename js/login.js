@@ -17,7 +17,8 @@ botaoLogar.addEventListener('click', (e)=> {
     if(inputEmail.value == 'user@user.com' && inputSenha.value == 'Admin123') {
         window.location.href = "produtos.html";
     } else {
-        console.log('non')
+        inputSenha.parentElement.classList.add('input-container--invalido')
+        inputSenha.parentElement.querySelector('.input-mensagem-erro').innerHTML = "Esse usuário não está cadastrado!";
     }
 })
 

@@ -215,15 +215,18 @@
                 <li class="rodape__sobre-item"><a href="#">Anuncie aqui</a></li>
             </ul>
             <div class="rodape__form">
+               <form action="submit">
                 <h3 class="rodape__form-titulo">Fale conosco</h3>
-                <div class="input-nome">
-                    <label for="input-nome" class="nome">Nome</label>
-                    <input type="text"id="input-nome" placeholder="André Lisboa">
+                <div>
+                    <label for="input-nome" >Nome</label>
+                    <input type="text" class="input" data-tipo="nome" placeholder="André Lisboa" required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
                 </div>
-                <div class="input-text">
-                    <textarea id="input-mensagem"  placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem"></textarea>
+                <div>
+                    <textarea placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem" required></textarea>
                 </div>
                 <button type="submit" class="rodape__form-botao botao">Enviar mensagem</button>
+               </form>
             </div>
         </div>      
         <section class="rodape__desenvolvedor">
