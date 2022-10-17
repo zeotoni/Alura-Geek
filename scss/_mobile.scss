@@ -10,8 +10,7 @@
         padding: 16px;
         display: flex;
         align-items: center;
-        background: url(../assets/img/Icone-lupa.svg) no-repeat;
-        background-position: calc(96%);
+        justify-content: space-between;
 
         &__logo {
             width: 100px;
@@ -20,6 +19,16 @@
 
         & input {
             display: none;
+            background-color: #F5F5F5;
+            border-radius: 20px;
+            box-shadow: none;
+            width: 272px;
+            height: 40px;
+            padding-top: 4px;
+
+            &::placeholder {
+                top: 12px;
+            }
         }
 
         &__botao {
@@ -101,20 +110,20 @@
             padding-bottom: 16px;
             justify-content: center;
 
-            &:nth-child(6) {
+            div:nth-of-type(5) {
                 display: none;
             }
 
-            &:nth-child(5) {
+            div:nth-of-type(6) {
                 display: none;
             }
 
             .card {
-                width: 164px;
+                width: 156px;
             }
         }
     }
-
+    
     .rodape {
         background-color: $bg-azul;
 

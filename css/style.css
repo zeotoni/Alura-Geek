@@ -100,8 +100,7 @@ textarea::placeholder {
     padding: 16px;
     display: flex;
     align-items: center;
-    background: url(../assets/img/Icone-lupa.svg) no-repeat;
-    background-position: 96%;
+    justify-content: space-between;
   }
   .cabecalho__logo {
     width: 100px;
@@ -109,6 +108,15 @@ textarea::placeholder {
   }
   .cabecalho input {
     display: none;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    box-shadow: none;
+    width: 272px;
+    height: 40px;
+    padding-top: 4px;
+  }
+  .cabecalho input::placeholder {
+    top: 12px;
   }
   .cabecalho__botao {
     color: #2A7AE4;
@@ -177,14 +185,14 @@ textarea::placeholder {
     padding-bottom: 16px;
     justify-content: center;
   }
-  .produtos__card:nth-child(6) {
+  .produtos__card div:nth-of-type(5) {
     display: none;
   }
-  .produtos__card:nth-child(5) {
+  .produtos__card div:nth-of-type(6) {
     display: none;
   }
   .produtos__card .card {
-    width: 164px;
+    width: 156px;
   }
   .rodape {
     background-color: #EAF2FD;
@@ -433,6 +441,7 @@ textarea::placeholder {
     box-sizing: border-box;
     background: none;
     padding: 16px 32px;
+    justify-content: unset;
   }
   .cabecalho__logo {
     padding-right: 32px;
@@ -459,6 +468,9 @@ textarea::placeholder {
   .cabecalho__botao {
     width: 132px;
     left: 74%;
+  }
+  .cabecalho__lupa {
+    display: none;
   }
   .banner {
     color: #ffffff;
@@ -492,10 +504,13 @@ textarea::placeholder {
   .produtos__card {
     padding-bottom: 32px;
   }
-  .card__img {
+  .produtos .card {
     width: 164px;
   }
-  .card__link {
+  .produtos .card__img {
+    width: 164px;
+  }
+  .produtos .card__link {
     font-size: 16px;
   }
   .rodape__info {
@@ -612,6 +627,9 @@ textarea::placeholder {
     background-color: #5595E9;
     color: #ffffff;
   }
+  .cabecalho__lupa {
+    display: none;
+  }
   .banner {
     height: 352px;
   }
@@ -651,6 +669,12 @@ textarea::placeholder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
+  .produtos__card div:nth-of-type(5) {
+    display: flex;
+  }
+  .produtos__card div:nth-of-type(6) {
+    display: flex;
+  }
   .produtos .card {
     width: 176px;
   }
@@ -661,12 +685,6 @@ textarea::placeholder {
     transition: 0.5s;
     font-size: 18px;
     text-decoration: underline;
-  }
-  .produtos .card:nth-child(6) {
-    display: flex;
-  }
-  .produtos .card:nth-child(5) {
-    display: flex;
   }
   .produtos:last-child {
     padding-bottom: 64px;

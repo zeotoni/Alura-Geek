@@ -1,3 +1,7 @@
+const lupa = document.querySelector('[data-tipo=lupa]');
+const inputPesquisa = document.querySelector('[data-tipo="cabecalho-input"]');
+const botaoLogin = document.querySelector('[data-tipo="botao-login"]')
+
 const exibeCards = () => {
     fetch('http://localhost:3000/produtos')
     .then(response => {
@@ -74,3 +78,8 @@ const exibeCards = () => {
         });
     })
 }
+
+lupa.addEventListener('click', ()=> {
+    inputPesquisa.setAttribute("style", "display: block");
+    botaoLogin.setAttribute("style", "display: none")
+})
