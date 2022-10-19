@@ -1,10 +1,16 @@
+import { valida } from "./validaForm.js";
+
 const lupa = document.querySelector('[data-tipo=lupa]');
 const inputPesquisa = document.querySelector('[data-tipo="cabecalho-input"]');
 const botaoLogin = document.querySelector('[data-tipo="botao-login"]');
 const logo = document.querySelector('[data-tipo="logo"]');
 const botaoFechar = document.querySelector('[data-tipo="botaoFechar"]');
+const inputs = document.querySelectorAll('input');
 
-const exibeCards = () => {
+
+
+
+function exibeCards() {
     fetch('http://localhost:3000/produtos')
     .then(response => {
         return response.json();
@@ -79,6 +85,8 @@ const exibeCards = () => {
     })
 }
 
+exibeCards();
+
 lupa.addEventListener('click', ()=> {
     inputPesquisa.setAttribute("style", "display: block");
     botaoLogin.setAttribute("style", "display: none");
@@ -95,22 +103,32 @@ botaoFechar.addEventListener('click', () => {
     botaoFechar.setAttribute("style", "display: none");   
 })
 
+
 inputPesquisa.addEventListener('keyup', (e)=> {
 
     if(e.key === 'Enter') {
-        produtoBuscado = inputPesquisa.value.toLowerCase();
+        const produtoBuscado = inputPesquisa.value.toLowerCase();
 
         fetch('http://localhost:3000/produtos')
         .then(response => {
             return response.json();
         })
         .then(response => {
-            const produtosSelect = response.filter(response => response.titulo.toLowerCase().includes(produtoBuscado));
-            let key = 'produtos';
-            // localStorage.setItem(produtos, JSON.stringify(produtosSelect));
-            localStorage.setItem(key, JSON.stringify(produtosSelect));
-            // console.log(produtosSelect)
+            const produtosSelecionados = response.filter(response => response.titulo.toLowerCase().includes(produtoBuscado));
+            const key = 'produtos';
+            localStorage.setItem(key, JSON.stringify(produtosSelecionados));
             window.location.href = "./html/produtosBuscados.html";
         })
     }
 })
+const mensagem = document.querySelector('[data-tipo="mensagem"]')
+mensagem.addEventListener('blur', () => {
+    valida(mensagem)
+})
+inputs.forEach(input => {
+    input.addEventListener('blur', (e)=> {
+        valida(e.target);
+    })
+})
+
+

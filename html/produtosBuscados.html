@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body onload="exibeCardsBuscados()">
+<body>
     <header class="cabecalho">
         <img class="cabecalho__logo" src="../assets/img/Logo.svg" alt="logo da AluraGeek" data-tipo="logo">
         <input type="text" placeholder="O que deseja encontrar?" data-tipo="cabecalho-input">
@@ -22,21 +22,15 @@
         <i class="fa-solid fa-xmark" data-tipo="botaoFechar"></i>
     </header>
     <main>
-        <!-- <section class="banner">
-            <div class="banner__texto">
-                <h1 class="banner__titulo">Dezembro Promocional</h1>
-                <p class="banner__subtitulo">Produtos selecionados com 33% de desconto</p>
-                <a href="#" class="banner__botao botao">Ver Consoles</a>
-            </div>
-        </section> -->
         <section class="galeria container">
             <section class="produtos">
-                <div class="produtos__header">
+                <div class="produtos__header" data-tipo="produtos-titulo">
                     <h2 class="produtos__titulo">Produtos buscados</h2>
                 </div>
                 <div class="produtos__card" data-tipo="produtos-buscados">
                 </div>
             </section>
+        </section>
     </main>
     <footer class="rodape">
         <div class="rodape__info container">
@@ -54,11 +48,13 @@
                 <h3 class="rodape__form-titulo">Fale conosco</h3>
                 <div>
                     <label for="input-nome" >Nome</label>
-                    <input type="text" class="input" data-tipo="nome" placeholder="André Lisboa" required>
+                    <input type="text" maxlength="40" class="input" data-tipo="nome" placeholder="André Lisboa" required>
                     <span class="input-mensagem-erro">Este campo não está válido</span>
                 </div>
                 <div>
-                    <textarea placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem" required></textarea>
+                    <textarea maxlength="120" placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem" data-tipo="mensagem" required></textarea>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+
                 </div>
                 <button type="submit" class="rodape__form-botao botao">Enviar mensagem</button>
                </form>
@@ -68,6 +64,6 @@
             <h4>Desenvolvido por Ezequiel Otoni<br>2022</h4>
         </section>
     </footer>
-    <script src="../js/produtosBuscados.js"></script>
+    <script src="../js/produtosBuscados.js" type="module"></script>
 </body>
 </html>
