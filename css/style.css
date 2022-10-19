@@ -125,6 +125,11 @@ textarea::placeholder {
     position: absolute;
     left: 42%;
   }
+  .cabecalho .fa-solid, .cabecalho fa-xmark {
+    color: #2A7AE4;
+    font-size: 20px;
+    display: none;
+  }
   .banner {
     position: relative;
     width: 100%;

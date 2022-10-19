@@ -1,6 +1,8 @@
 const lupa = document.querySelector('[data-tipo=lupa]');
 const inputPesquisa = document.querySelector('[data-tipo="cabecalho-input"]');
-const botaoLogin = document.querySelector('[data-tipo="botao-login"]')
+const botaoLogin = document.querySelector('[data-tipo="botao-login"]');
+const logo = document.querySelector('[data-tipo="logo"]');
+const botaoFechar = document.querySelector('[data-tipo="botaoFechar"]');
 
 const exibeCards = () => {
     fetch('http://localhost:3000/produtos')
@@ -8,8 +10,6 @@ const exibeCards = () => {
         return response.json();
     })
     .then(response => {
-        // let produtosSelect = response.filter(response => response.categoria == "diversos")
-        // console.log(produtosSelect);
         
         let cardValores = {
             img: "",
@@ -81,5 +81,36 @@ const exibeCards = () => {
 
 lupa.addEventListener('click', ()=> {
     inputPesquisa.setAttribute("style", "display: block");
-    botaoLogin.setAttribute("style", "display: none")
+    botaoLogin.setAttribute("style", "display: none");
+    logo.setAttribute("style", "display: none");
+    lupa.setAttribute("style", "display: none");
+    botaoFechar.setAttribute("style", "display: block");   
+})
+
+botaoFechar.addEventListener('click', () => {
+    inputPesquisa.setAttribute("style", "display: none");
+    botaoLogin.setAttribute("style", "display: block");
+    logo.setAttribute("style", "display: block");
+    lupa.setAttribute("style", "display: block");
+    botaoFechar.setAttribute("style", "display: none");   
+})
+
+inputPesquisa.addEventListener('keyup', (e)=> {
+
+    if(e.key === 'Enter') {
+        produtoBuscado = inputPesquisa.value.toLowerCase();
+
+        fetch('http://localhost:3000/produtos')
+        .then(response => {
+            return response.json();
+        })
+        .then(response => {
+            const produtosSelect = response.filter(response => response.titulo.toLowerCase().includes(produtoBuscado));
+            let key = 'produtos';
+            // localStorage.setItem(produtos, JSON.stringify(produtosSelect));
+            localStorage.setItem(key, JSON.stringify(produtosSelect));
+            // console.log(produtosSelect)
+            window.location.href = "./html/produtosBuscados.html";
+        })
+    }
 })
