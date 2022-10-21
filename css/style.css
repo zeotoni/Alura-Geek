@@ -270,6 +270,39 @@ textarea::placeholder {
     font-weight: 500;
     padding: 32px;
   }
+  .caixa {
+    padding: 32px 16px;
+  }
+  .mensagem-cartao {
+    background-color: #ffffff;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 720px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(85, 166, 255, 0.2196078431);
+  }
+  .mensagem-cartao__icone {
+    background: url(../assets/img/checkmark.svg) no-repeat;
+    display: block;
+    background-size: cover;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 16px;
+  }
+  .mensagem-cartao__titulo {
+    font-size: 28px;
+    color: #464646;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .mensagem-cartao__botao {
+    color: #ffffff;
+    background-color: #2A7AE4;
+  }
   .login {
     display: flex;
     flex-direction: column;
@@ -384,6 +417,7 @@ textarea::placeholder {
   }
   .todosOsProdutos__produtos .card {
     position: relative;
+    width: 156px;
   }
   .todosOsProdutos__produtos .card__icons {
     position: absolute;
@@ -583,6 +617,9 @@ textarea::placeholder {
   .todosOsProdutos__titulo {
     padding-bottom: 0;
   }
+  .todosOsProdutos .card {
+    width: 164px;
+  }
   .produto-descricao {
     display: flex;
     padding: 32px;
@@ -666,8 +703,6 @@ textarea::placeholder {
   }
   .produtos__botao:hover {
     text-decoration: underline;
-    transition: 0.5s;
-    font-size: 18px;
   }
   .produtos__card {
     padding-bottom: 0;
@@ -687,8 +722,6 @@ textarea::placeholder {
     width: 176px;
   }
   .produtos .card a:hover {
-    transition: 0.5s;
-    font-size: 18px;
     text-decoration: underline;
   }
   .produtos:last-child {
@@ -701,8 +734,6 @@ textarea::placeholder {
   }
   .rodape__sobre a:hover {
     text-decoration: underline;
-    transition: 0.5s;
-    font-size: 18px;
   }
   .rodape__form {
     padding: 0;
@@ -732,6 +763,12 @@ textarea::placeholder {
     padding: 16px;
   }
   .rodape__form-botao:hover {
+    transition: 0.5s;
+    background-color: #D4E4FA;
+    color: #2A7AE4;
+    cursor: pointer;
+  }
+  .mensagem-cartao__botao:hover {
     transition: 0.5s;
     background-color: #D4E4FA;
     color: #2A7AE4;
@@ -815,8 +852,6 @@ textarea::placeholder {
   }
   .todosOsProdutos__produtos .card__link:hover {
     text-decoration: underline;
-    transition: 0.5s;
-    font-size: 18px;
   }
   .produto-descricao {
     padding: 64px 152px;
@@ -862,8 +897,6 @@ textarea::placeholder {
   }
   .produtos__similares-card a:hover {
     text-decoration: underline;
-    transition: 0.5s;
-    font-size: 18px;
   }
   .produtos__similares-card .card:nth-child(6) {
     display: flex;

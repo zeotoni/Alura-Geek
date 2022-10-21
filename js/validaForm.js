@@ -1,5 +1,5 @@
 export const valida = (input) =>{
-    const tipoDeInput = input.dataset.tipo
+    const tipoDeInput = input.dataset.tipo;
     
     if (input.validity.valid) {
         input.parentElement.classList.remove('input-container--invalido')

@@ -5,12 +5,8 @@ const inputPesquisa = document.querySelector('[data-tipo="cabecalho-input"]');
 const botaoLogin = document.querySelector('[data-tipo="botao-login"]');
 const logo = document.querySelector('[data-tipo="logo"]');
 const botaoFechar = document.querySelector('[data-tipo="botaoFechar"]');
-const inputs = document.querySelectorAll('input');
 
-
-
-
-function exibeCards() {
+ function exibeCards() {
     fetch('http://localhost:3000/produtos')
     .then(response => {
         return response.json();
@@ -121,14 +117,18 @@ inputPesquisa.addEventListener('keyup', (e)=> {
         })
     }
 })
-const mensagem = document.querySelector('[data-tipo="mensagem"]')
-mensagem.addEventListener('blur', () => {
-    valida(mensagem)
-})
+
+
+const inputs = document.querySelectorAll('input');
 inputs.forEach(input => {
     input.addEventListener('blur', (e)=> {
         valida(e.target);
     })
+})
+
+const inputMensagem = document.querySelector('[data-tipo="mensagem"]')
+inputMensagem.addEventListener('blur', (e) => {
+    valida(e.target)
 })
 
 

@@ -81,7 +81,7 @@ inputs.forEach(input => {
     })
 })
 
-const mensagem = document.querySelector('[data-tipo="mensagem"]')
-mensagem.addEventListener('blur', () => {
-    valida(mensagem)
+const inputMensagem = document.querySelector('[data-tipo="mensagem"]')
+inputMensagem.addEventListener('blur', (e) => {
+    valida(e.target)
 })

@@ -77,8 +77,6 @@
 
             &:hover {
                 text-decoration: underline;
-                transition: 0.5s;
-                font-size: 18px;
             }
         }
 
@@ -104,8 +102,6 @@
             }
 
             & a:hover {
-                transition: 0.5s;
-                font-size: 18px;
                 text-decoration: underline;
                 
             }
@@ -126,8 +122,6 @@
 
         &__sobre a:hover {
             text-decoration: underline;
-            transition: 0.5s;
-            font-size: 18px;
         }
 
         &__form {
@@ -168,6 +162,16 @@
                 }
             }
 
+        }
+    }
+
+    //... Pagina mensagem enviada...
+  
+    .mensagem-cartao {
+
+        &__botao:hover {
+            @include animaBotao($azul-principal);
+            cursor: pointer;
         }
     }
 
@@ -272,8 +276,6 @@
             .card {
                 &__link:hover {
                     text-decoration: underline;
-                    transition: 0.5s;
-                    font-size: 18px;
                 }
             }
 
@@ -333,8 +335,6 @@
                 
                 &:hover {
                     text-decoration: underline;
-                    transition: 0.5s;
-                    font-size: 18px;
                 }
             }
 

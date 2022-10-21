@@ -213,6 +213,45 @@
         }
     }
 
+    //... Pagina mensagem enviada...
+    .caixa {
+        padding: 32px 16px;
+    }
+    .mensagem-cartao {
+        
+        background-color: $branco-principal;
+        padding: 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        max-width: 720px;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow:  0 5px 10px #55a6ff38;;
+
+        &__icone {
+            background: url(../assets/img/checkmark.svg) no-repeat;
+            display: block;
+            background-size: cover;
+            width: 56px;
+            height: 56px;
+            margin-bottom: 16px;
+        }
+
+        &__titulo {
+            font-size: 28px; 
+            color: $cinza-escuro;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        &__botao {
+            color: $branco-principal;
+            background-color: $azul-principal;
+        }
+    }
+
     //..... Página Login.....
 
     .login {
@@ -356,6 +395,7 @@
 
             .card {
                 position: relative;
+                width: 156px;
 
                 &__icons {
                     position: absolute;

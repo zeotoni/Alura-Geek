@@ -81,15 +81,17 @@
                 <li class="rodape__sobre-item"><a href="#">Anuncie aqui</a></li>
             </ul>
             <div class="rodape__form">
-               <form action="submit">
+               <form action="./mensagem-enviada.html">
                 <h3 class="rodape__form-titulo">Fale conosco</h3>
                 <div>
                     <label for="input-nome" >Nome</label>
-                    <input type="text" maxlength="40" class="input" data-tipo="nome" placeholder="André Lisboa" required>
+                    <input type="text" minlength="5" maxlength="40" class="input" data-tipo="nome" placeholder="André Lisboa" required>
                     <span class="input-mensagem-erro">Este campo não está válido</span>
                 </div>
                 <div>
-                    <textarea maxlength="120" placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem" required></textarea>
+                    <textarea class="input" minlength="20" maxlength="120" placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem" data-tipo="mensagem" required></textarea>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+
                 </div>
                 <button type="submit" class="rodape__form-botao botao">Enviar mensagem</button>
                </form>
@@ -99,5 +101,6 @@
             <h4>Desenvolvido por Ezequiel Otoni<br>2022</h4>
         </section>
     </footer>
+    <script src="../js/produto-descricao.js" type="module"></script>
 </body>
 </html>
