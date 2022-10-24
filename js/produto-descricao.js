@@ -1,5 +1,35 @@
 import { valida } from "./validaForm.js";
 
+const searchButton = document.querySelector('[data-search-button]');
+const inputPesquisa = document.querySelector('[data-tipo="cabecalho-input"]');
+const botaoLogin = document.querySelector('[data-tipo="botao-login"]');
+const logo = document.querySelector('[data-tipo="logo"]');
+
+searchButton.addEventListener("click", () => {
+	botaoLogin.classList.toggle("hidden")
+	logo.classList.toggle("hidden")
+	searchButton.dataset.searchButton == "fechar" ? searchButton.dataset.searchButton = "" : searchButton.dataset.searchButton = "fechar"
+	inputPesquisa.classList.toggle("hidden")
+})
+
+inputPesquisa.addEventListener('keyup', (e)=> {
+
+    if(e.key === 'Enter') {
+        const produtoBuscado = inputPesquisa.value.toLowerCase();
+
+        fetch('http://localhost:3000/produtos')
+        .then(response => {
+            return response.json();
+        })
+        .then(response => {
+            const produtosSelecionados = response.filter(response => response.titulo.toLowerCase().includes(produtoBuscado));
+            const key = 'produtos';
+            localStorage.setItem(key, JSON.stringify(produtosSelecionados));
+            window.location.href = "produtosBuscados.html";
+        })
+    }
+})
+
 const inputs = document.querySelectorAll('input');
 
 inputs.forEach(input => {
