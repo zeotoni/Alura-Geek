@@ -19,3 +19,15 @@
 <h2>Como testar</h2>
 
 * Para testar, instale o json server e utilize o comando json-server --watch db.json e acesse: https://alura-geek-two.vercel.app
+
+<h2>Progresso</h2>
+
+* Cadastro de produto
+* Login
+* Validação de formulários
+* Listagem dinâmica de produtos
+* Pesquisa de produto
+* Responsividade 
+
+<br>Desenvolvido por www.linkedin.com/in/zeotoni
+
