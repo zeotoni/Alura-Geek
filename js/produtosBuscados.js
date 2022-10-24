@@ -1,11 +1,17 @@
 import { valida } from "./validaForm.js";
 
-const inputPesquisa = document.querySelector('[data-tipo="cabecalho-input"]');
 const sessaoProdutosTitulo = document.querySelector('[data-tipo="produtos-titulo"]')
-const lupa = document.querySelector('[data-tipo=lupa]');
-const botaoFechar = document.querySelector('[data-tipo="botaoFechar"]');
+const searchButton = document.querySelector('[data-search-button]');
+const inputPesquisa = document.querySelector('[data-tipo="cabecalho-input"]');
 const botaoLogin = document.querySelector('[data-tipo="botao-login"]');
 const logo = document.querySelector('[data-tipo="logo"]');
+
+searchButton.addEventListener("click", () => {
+	botaoLogin.classList.toggle("hidden")
+	logo.classList.toggle("hidden")
+	searchButton.dataset.searchButton == "fechar" ? searchButton.dataset.searchButton = "" : searchButton.dataset.searchButton = "fechar"
+	inputPesquisa.classList.toggle("hidden")
+})
 
 function exibeCardsBuscados() {
     const produtosEncontrados = JSON.parse(localStorage.getItem('produtos'));
@@ -39,26 +45,11 @@ function exibeCardsBuscados() {
     })
 }
 exibeCardsBuscados();
-lupa.addEventListener('click', ()=> {
-    inputPesquisa.setAttribute("style", "display: block");
-    botaoLogin.setAttribute("style", "display: none");
-    logo.setAttribute("style", "display: none");
-    lupa.setAttribute("style", "display: none");
-    botaoFechar.setAttribute("style", "display: block");   
-})
-
-botaoFechar.addEventListener('click', () => {
-    inputPesquisa.setAttribute("style", "display: none");
-    botaoLogin.setAttribute("style", "display: block");
-    logo.setAttribute("style", "display: block");
-    lupa.setAttribute("style", "display: block");
-    botaoFechar.setAttribute("style", "display: none");   
-})
 
 inputPesquisa.addEventListener('keyup', (e)=> {
 
     if(e.key === 'Enter') {
-        produtoBuscado = inputPesquisa.value.toLowerCase();
+        const produtoBuscado = inputPesquisa.value.toLowerCase();
 
         fetch('http://localhost:3000/produtos')
         .then(response => {

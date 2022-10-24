@@ -65,7 +65,7 @@
             padding: 64px 0 16px;
             background-position: 100% 66px;
             background-size: 22px;
-            max-width: unset;
+            width: unset;
         }
 
         &__titulo {
@@ -82,7 +82,7 @@
 
 
         &__card {
-            padding-bottom: 0;
+            padding: 0;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 

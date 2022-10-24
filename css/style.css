@@ -106,8 +106,7 @@ textarea::placeholder {
     width: 100px;
     height: 28px;
   }
-  .cabecalho input {
-    display: none;
+  .cabecalho__input {
     background-color: #F5F5F5;
     border-radius: 20px;
     box-shadow: none;
@@ -115,8 +114,11 @@ textarea::placeholder {
     height: 40px;
     padding-top: 4px;
   }
-  .cabecalho input::placeholder {
+  .cabecalho__input::placeholder {
     top: 12px;
+  }
+  .cabecalho .hidden {
+    display: none;
   }
   .cabecalho__botao {
     color: #2A7AE4;
@@ -125,10 +127,18 @@ textarea::placeholder {
     position: absolute;
     left: 42%;
   }
-  .cabecalho .fa-solid, .cabecalho fa-xmark {
-    color: #2A7AE4;
-    font-size: 20px;
-    display: none;
+  .cabecalho .header-search[data-search-button] {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-image: url(../assets/img/Icone-lupa.svg);
+    border: none;
+    background-color: #ffffff;
+  }
+  .cabecalho .header-search[data-search-button=fechar] {
+    background-image: url(../assets/img/icone-fechar.svg);
+    width: 18px;
+    height: 18px;
   }
   .banner {
     position: relative;
@@ -187,8 +197,7 @@ textarea::placeholder {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    padding-bottom: 16px;
-    justify-content: center;
+    padding: 0 0 16px 16px;
   }
   .produtos__card div:nth-of-type(5) {
     display: none;
@@ -512,6 +521,12 @@ textarea::placeholder {
     padding-left: 12px;
     color: #A2A2A2;
   }
+  .cabecalho .hidden {
+    display: unset;
+  }
+  .cabecalho .header-search {
+    display: none;
+  }
   .cabecalho__botao {
     width: 132px;
     left: 74%;
@@ -538,18 +553,19 @@ textarea::placeholder {
     padding-bottom: 30px;
   }
   .produtos__header {
-    padding: 32px 32px 16px;
+    padding: 32px 32px 0;
     background-position: 96% 34px;
     background-size: 22px;
     margin: 0 auto;
-    max-width: 704px;
+    width: 704px;
   }
   .produtos__botao {
     font-size: 16px;
     margin-right: 3.5%;
   }
   .produtos__card {
-    padding-bottom: 32px;
+    justify-content: center;
+    padding: 32px;
   }
   .produtos .card {
     width: 164px;
@@ -710,7 +726,7 @@ textarea::placeholder {
     padding: 64px 0 16px;
     background-position: 100% 66px;
     background-size: 22px;
-    max-width: unset;
+    width: unset;
   }
   .produtos__titulo {
     font-size: 32px;
@@ -722,7 +738,7 @@ textarea::placeholder {
     text-decoration: underline;
   }
   .produtos__card {
-    padding-bottom: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }

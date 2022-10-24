@@ -1,10 +1,9 @@
 import { valida } from "./validaForm.js";
 
-const lupa = document.querySelector('[data-tipo=lupa]');
+const searchButton = document.querySelector('[data-search-button]');
 const inputPesquisa = document.querySelector('[data-tipo="cabecalho-input"]');
 const botaoLogin = document.querySelector('[data-tipo="botao-login"]');
 const logo = document.querySelector('[data-tipo="logo"]');
-const botaoFechar = document.querySelector('[data-tipo="botaoFechar"]');
 
 function exibeCards() {
     fetch('http://localhost:3000/produtos')
@@ -84,21 +83,11 @@ function exibeCards() {
 
 exibeCards();
 
-
-lupa.addEventListener('click', ()=> {
-    inputPesquisa.setAttribute("style", "display: block");
-    botaoLogin.setAttribute("style", "display: none");
-    logo.setAttribute("style", "display: none");
-    lupa.setAttribute("style", "display: none");
-    botaoFechar.setAttribute("style", "display: block");   
-})
-
-botaoFechar.addEventListener('click', () => {
-    inputPesquisa.setAttribute("style", "display: none");
-    botaoLogin.setAttribute("style", "display: block");
-    logo.setAttribute("style", "display: block");
-    lupa.setAttribute("style", "display: block");
-    botaoFechar.setAttribute("style", "display: none");   
+searchButton.addEventListener("click", () => {
+	botaoLogin.classList.toggle("hidden")
+	logo.classList.toggle("hidden")
+	searchButton.dataset.searchButton == "fechar" ? searchButton.dataset.searchButton = "" : searchButton.dataset.searchButton = "fechar"
+	inputPesquisa.classList.toggle("hidden")
 })
 
 

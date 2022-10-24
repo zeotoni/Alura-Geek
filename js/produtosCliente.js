@@ -1,4 +1,16 @@
-function exibeCards() {
+const searchButton = document.querySelector('[data-search-button]');
+const inputPesquisa = document.querySelector('[data-tipo="cabecalho-input"]');
+const botaoLogin = document.querySelector('[data-tipo="botao-login"]');
+const logo = document.querySelector('[data-tipo="logo"]');
+
+searchButton.addEventListener("click", () => {
+	botaoLogin.classList.toggle("hidden")
+	logo.classList.toggle("hidden")
+	searchButton.dataset.searchButton == "fechar" ? searchButton.dataset.searchButton = "" : searchButton.dataset.searchButton = "fechar"
+	inputPesquisa.classList.toggle("hidden")
+})
+
+const exibeProdutos = () => {
     fetch('http://localhost:3000/produtos')
     .then(response => {
         return response.json();
@@ -25,10 +37,6 @@ function exibeCards() {
             let cardNovo = document.createElement('div');
             cardNovo.innerHTML =  
             `<div class="card">
-                <div class="card__icons">
-                    <img src="../assets/img/botao-excluir.svg" alt="Ícone de lixeira" class="card__icons-img" data-tipo="excluir-produto">
-                    <img src="../assets/img/botao-editar.svg" alt="Ícone de lápis" class="card__icons-img">
-                </div>
                 <img src=".${item.img}" alt="${item.alt}" class="card__img">
                 <h3 class="card__nome">${item.titulo}</h3>
                 <span class="card__preco">${item.preco}</span>
@@ -39,5 +47,4 @@ function exibeCards() {
         });
     })
 }
-
-exibeCards();
+exibeProdutos();

@@ -19,12 +19,15 @@
         <a href="./html/login.html" class="cabecalho__botao botao" data-tipo="botao-login">Login</a>
         <button type="button" data-search-button class="header-search"></button>
     </header>
-    <main class="caixa">
-        <section class="mensagem-cartao">
-            <span class="mensagem-cartao__icone"></span>
-            <h1 class="mensagem-cartao__titulo">Mensagem enviada com sucesso!</h1>
-            <a href="../index.html" class="mensagem-cartao__botao botao">Página Inicial</a>
-        </section>
+    <main>
+       <section class="todosOsProdutos">
+            <div class="todosOsProdutos__cabecalho">
+                <h2 class="todosOsProdutos__titulo">Todos os produtos</h2>
+                <!-- <a href="./novoProduto.html" class="todosOsProdutos__botao botao">Adicionar produto</a> -->
+            </div>
+            <div class="todosOsProdutos__produtos" data-tipo="produtos">
+            </div>
+       </section>
     </main>
     <footer class="rodape">
         <div class="rodape__info container">
@@ -42,13 +45,11 @@
                 <h3 class="rodape__form-titulo">Fale conosco</h3>
                 <div>
                     <label for="input-nome" >Nome</label>
-                    <input type="text" minlength="5" maxlength="40" class="input" data-tipo="nome" placeholder="André Lisboa" required>
+                    <input type="text" class="input" data-tipo="nome" placeholder="André Lisboa" required>
                     <span class="input-mensagem-erro">Este campo não está válido</span>
                 </div>
                 <div>
-                    <textarea class="input" minlength="20" maxlength="120" placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem" data-tipo="mensagem" required></textarea>
-                    <span class="input-mensagem-erro">Este campo não está válido</span>
-
+                    <textarea placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem" required></textarea>
                 </div>
                 <button type="submit" class="rodape__form-botao botao">Enviar mensagem</button>
                </form>
@@ -58,6 +59,6 @@
             <h4>Desenvolvido por Ezequiel Otoni<br>2022</h4>
         </section>
     </footer>
-    <script src="../js/produto-descricao.js" type="module"></script>
+    <script src="../js/produtosCliente.js"></script>
 </body>
 </html>

@@ -16,10 +16,9 @@
 <body>
     <header class="cabecalho">
         <img class="cabecalho__logo" src="./assets/img/Logo.svg" alt="logo da AluraGeek" data-tipo="logo">
-        <input type="text" placeholder="O que deseja encontrar?" data-tipo="cabecalho-input">
+        <input type="text" class="cabecalho__input hidden" placeholder="O que deseja encontrar?" data-tipo="cabecalho-input">
         <a href="./html/login.html" class="cabecalho__botao botao" data-tipo="botao-login">Login</a>
-        <img src="./assets/img/Icone-lupa.svg" alt="Ícone de lupa" class="cabecalho__lupa" data-tipo="lupa">
-        <i class="fa-solid fa-xmark" data-tipo="botaoFechar"></i>
+        <button type="button" data-search-button class="header-search"></button>
     </header>
     <main>
         <section class="banner">
@@ -33,7 +32,7 @@
             <section class="produtos">
                 <div class="produtos__header">
                     <h2 class="produtos__titulo">Star Wars</h2>
-                    <a href="#" class="produtos__botao">Ver Tudo</a>
+                    <a href="./html/produtosCliente.html" class="produtos__botao" data-tipo="secao-starwars">Ver Tudo</a>
                 </div>
                 <div class="produtos__card" data-tipo="starWars">
                 </div>
@@ -41,7 +40,7 @@
             <section class="produtos">
                 <div class="produtos__header">
                     <h2 class="produtos__titulo">Consoles</h2>
-                    <a href="#" class="produtos__botao">Ver Tudo</a>
+                    <a href="./html/produtosCliente.html" class="produtos__botao" data-tipo="secao-consoles">Ver Tudo</a>
                 </div>
                 <div class="produtos__card" data-tipo="consoles">
                 </div>
@@ -49,7 +48,7 @@
             <section class="produtos">
                 <div class="produtos__header">
                     <h2 class="produtos__titulo">Diversos</h2>
-                    <a href="#" class="produtos__botao">Ver Tudo</a>
+                    <a href="./html/produtosCliente.html" class="produtos__botao" data-tipo="secao-diversos">Ver Tudo</a>
                 </div>
                 <div class="produtos__card" data-tipo="diversos">
                 </div>
@@ -78,7 +77,6 @@
                 <div>
                     <textarea class="input" minlength="20" maxlength="120" placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem" data-tipo="mensagem" required></textarea>
                     <span class="input-mensagem-erro">Este campo não está válido</span>
-
                 </div>
                 <button type="submit" class="rodape__form-botao botao" data-tipo="botao-mensagem">Enviar mensagem</button>
                </form>

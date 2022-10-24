@@ -2,9 +2,6 @@
 
     // ....Página Home......
 
-    .container {
-        // width: 328px;
-    }
     .cabecalho {
         margin: 0 auto;
         padding: 16px;
@@ -17,8 +14,8 @@
             height: 28px;
         }
 
-        & input {
-            display: none;
+        &__input {
+          
             background-color: #F5F5F5;
             border-radius: 20px;
             box-shadow: none;
@@ -29,6 +26,10 @@
             &::placeholder {
                 top: 12px;
             }
+
+        }
+        .hidden {
+            display: none;
         }
 
         &__botao {
@@ -39,10 +40,19 @@
             left: calc(42%);
         }
 
-        .fa-solid,fa-xmark {
-            color: #2A7AE4;
-            font-size: 20px;
-            display: none;
+        .header-search[data-search-button] {
+            width: 24px;
+            height: 24px;
+            background-size: cover;
+            background-image: url(../assets/img/Icone-lupa.svg);
+            border: none;
+            background-color: $branco-principal;
+        }
+
+        .header-search[data-search-button="fechar"] {
+            background-image: url(../assets/img/icone-fechar.svg);
+            width: 18px;
+            height: 18px;
         }
     }
 
@@ -113,8 +123,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 16px;
-            padding-bottom: 16px;
-            justify-content: center;
+            padding: 0 0 16px 16px;
 
             div:nth-of-type(5) {
                 display: none;

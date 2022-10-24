@@ -1,7 +1,4 @@
 @media screen and (min-width: 768px) {
-    .container {
-        // width: 704px;
-    }
 
     .cabecalho {
         box-sizing: border-box;
@@ -32,6 +29,14 @@
                 padding-left: 12px;
                 color: $cinza-claro;
             }
+        }
+
+        .hidden {
+            display: unset;
+        }
+
+        .header-search {
+            display: none;
         }
 
         &__botao {
@@ -70,11 +75,11 @@
     .produtos {
         
         &__header {
-            padding: 32px 32px 16px;
+            padding: 32px 32px 0;
             background-position: 96% 34px;
             background-size: 22px;
             margin: 0 auto;
-            max-width: 704px;
+            width: 704px;
         }
 
         &__botao {
@@ -83,7 +88,8 @@
         }
 
         &__card {
-            padding-bottom: 32px;
+            justify-content: center;
+            padding: 32px;
 
         }
         .card {
