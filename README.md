@@ -15,3 +15,7 @@
 <img src="https://user-images.githubusercontent.com/87879397/197628270-001ebe6d-adf8-4caf-aaa1-03337eda0734.png">
 <img src="https://user-images.githubusercontent.com/87879397/197632059-db0ed560-504b-4c68-9811-829f65025435.png">
 <img src="https://user-images.githubusercontent.com/87879397/197632085-98941817-a4e6-420e-bdcf-5c979b756eb9.png">
+
+<h2>Acesso ao projeto</h2>
+
+* Para testar, acesse: https://alura-geek-two.vercel.app
