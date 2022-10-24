@@ -16,6 +16,6 @@
 <img src="https://user-images.githubusercontent.com/87879397/197632059-db0ed560-504b-4c68-9811-829f65025435.png">
 <img src="https://user-images.githubusercontent.com/87879397/197632085-98941817-a4e6-420e-bdcf-5c979b756eb9.png">
 
-<h2>Acesso ao projeto</h2>
+<h2>Como testar</h2>
 
-* Para testar, acesse: https://alura-geek-two.vercel.app
+* Para testar, instale o json server e utilize o comando json-server --watch db.json e acesse: https://alura-geek-two.vercel.app
