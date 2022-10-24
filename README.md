@@ -18,7 +18,9 @@
 
 <h2>Como testar</h2>
 
-* Para testar, instale o json server e utilize o comando json-server --watch db.json e acesse: https://alura-geek-two.vercel.app
+* Instale o Json Server e utilize o comando json-server --watch db.json 
+* Acesse: https://alura-geek-two.vercel.app
+* Para o login utilize user@user.com  senha: Admin123
 
 <h2>Progresso</h2>
 
