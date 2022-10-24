@@ -35,6 +35,15 @@ const mensagensDeErro = {
     },
     preco: {
         valueMissing: 'O campo de preço não pode estar vazio.'
+    },
+    categoria: {
+        valueMissing: 'O campo de categoria não pode estar vazio.'
+    },
+    imagem: {
+        valueMissing: 'O campo de imagem não pode estar vazio.'
+    },
+    descricao: {
+        valueMissing: 'O campo de descrição não pode estar vazio.'
     }
 }
 

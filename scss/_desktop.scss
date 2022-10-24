@@ -246,7 +246,7 @@
     // .....Pagina produtos.....
 
     .todosOsProdutos {
-        width: 1064px;
+        width: 1136px;
         margin: 0 auto;
         padding: 64px 0;
 
@@ -274,6 +274,10 @@
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 
             .card {
+                width: 176px;
+                &__img {
+                    width: 176px;
+                }
                 &__link:hover {
                     text-decoration: underline;
                 }
@@ -314,7 +318,7 @@
     }
 
     .produtos__similares {
-        width: 1064px;
+        width: 1136px;
         margin: 0 auto;
         padding: 64px 0;
         color: $cinza-escuro;
@@ -338,11 +342,19 @@
                 }
             }
 
-            .card:nth-child(6) {
+            .card {
+                width: 176px;
+
+                &__img {
+                    width: 176px;
+                }
+            }
+
+            div:nth-of-type(5) {
                 display: flex;
             }
 
-            .card:nth-child(5) {
+            div:nth-of-type(6) {
                 display: flex;
             }
         }

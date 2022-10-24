@@ -14,35 +14,45 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img class="cabecalho__logo" src="../assets/img/Logo.svg" alt="logo da AluraGeek">
+        <a href="../index.html"><img class="cabecalho__logo" src="../assets/img/Logo.svg" alt="logo da AluraGeek" data-tipo="logo"></a>
         <input type="search" placeholder="O que deseja encontrar?">
         <a href="#" class="cabecalho__botao botao-adm botao">Menu Administrador</a>
         <img src="../assets/img/Icone-lupa.svg" alt="Ícone de lupa" class="cabecalho__lupa" data-tipo="lupa">
     </header>
     <main>
        <section class="cadastrar-produto">
-           <form action="submit" class="cadastrar-produto__form">
+           <form action="submit" class="cadastrar-produto__form" data-tipo="form-produto">
             <h2 class="cadastrar-produto__titulo">Adicionar novo produto</h2>
             <div>
-                <label for="url">URL da imagem</label>
-                <input type="text" required>
+                <label for="selecao-imagem">Selecione uma imagem</label>
+                <input id="selecao-imagem" class="input" type="file" accept="image/*" data-tipo="imagem" required>
+                <span class="input-mensagem-erro">Este campo não está válido</span>
             </div>
             <div>
                 <label for="catgoria">Categoria</label>
-                <input type="text" placeholder="Consoles" required>
+                <input class="input" type="text" list="categoria" placeholder="Consoles" data-tipo="categoria" required>
+                <datalist id="categoria">
+                    <option value="Consoles">
+                    <option value="Star Wars">
+                    <option value="Diversos">
+                </datalist>
+                <span class="input-mensagem-erro">Este campo não está válido</span>
             </div>
             <div >
                 <label for="nome">Nome do produto</label>
-                <input type="text"  placeholder="Produto XYZ" required>
+                <input class="input" maxlength="80" type="text"  placeholder="Produto XYZ" data-tipo="nome" required>
+                <span class="input-mensagem-erro">Este campo não está válido</span>
             </div>
             <div>
                 <label for="preco">Preço do produto</label>
-                <input type="number" placeholder="R$ 60,00" required>
+                <input class="input" inputmode="numeric" placeholder="R$ 0,00" data-tipo="preco" required>
+                <span class="input-mensagem-erro">Este campo não está válido</span>
             </div>
             <div>
-                <textarea id="input-mensagem"  placeholder="Descrição do prouduto" aria-label="Descrição do produto"></textarea>
+                <textarea class="input" data-tipo="descricao" maxlength="500" placeholder="Descrição do prouduto" aria-label="Descrição do produto" required></textarea>
+                <span class="input-mensagem-erro">Este campo não está válido</span>
             </div>
-            <button type="submit" class="cadastrar-produto__botao botao">Adicionar produto</button>
+            <button type="submit" class="cadastrar-produto__botao botao" data-tipo="botao-cadastrar">Adicionar produto</button>
         </form>
        </section>
     </main>
@@ -76,5 +86,7 @@
             <h4>Desenvolvido por Ezequiel Otoni<br>2022</h4>
         </section>
     </footer>
+    <script src="../js/novoProduto.js" type="module"></script>
+    <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
 </body>
 </html>

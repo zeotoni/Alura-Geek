@@ -10,7 +10,7 @@ function exibeCards() {
             imgAlt: "",
             titulo: "",
             preco: "",
-            link: ""
+            id: ""
         }
 
         response.forEach(item => {
@@ -19,7 +19,7 @@ function exibeCards() {
                 imgAlt: item.alt,
                 titulo: item.titulo,
                 preco: item.preco,
-                link: item.link
+                id: item.id
             }
 
             let cardNovo = document.createElement('div');
@@ -32,7 +32,7 @@ function exibeCards() {
                 <img src=".${item.img}" alt="${item.alt}" class="card__img">
                 <h3 class="card__nome">${item.titulo}</h3>
                 <span class="card__preco">${item.preco}</span>
-                <a href="./html/produto-descricao.html" class="card__link">${item.link}</a>
+                <a href="../html/produto-descricao.html?id=${item.id}" class="card__link" data-tipo="link-produto">Ver Produto</a>
             </div>`
            
             document.querySelector('[data-tipo="produtos"]').appendChild(cardNovo)

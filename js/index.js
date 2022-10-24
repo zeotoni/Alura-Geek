@@ -6,7 +6,7 @@ const botaoLogin = document.querySelector('[data-tipo="botao-login"]');
 const logo = document.querySelector('[data-tipo="logo"]');
 const botaoFechar = document.querySelector('[data-tipo="botaoFechar"]');
 
- function exibeCards() {
+function exibeCards() {
     fetch('http://localhost:3000/produtos')
     .then(response => {
         return response.json();
@@ -18,7 +18,7 @@ const botaoFechar = document.querySelector('[data-tipo="botaoFechar"]');
             imgAlt: "",
             titulo: "",
             preco: "",
-            link: ""
+            id: ""
         }
 
         response.filter(response => response.categoria == "star wars").forEach(item => {
@@ -27,7 +27,7 @@ const botaoFechar = document.querySelector('[data-tipo="botaoFechar"]');
                 imgAlt: item.alt,
                 titulo: item.titulo,
                 preco: item.preco,
-                link: item.link
+                id: item.id
             }
 
             let cardNovo = document.createElement('div');
@@ -36,7 +36,7 @@ const botaoFechar = document.querySelector('[data-tipo="botaoFechar"]');
                 <img src="${item.img}" alt="${item.alt}" class="card__img">
                 <h3 class="card__nome">${item.titulo}</h3>
                 <span class="card__preco">${item.preco}</span>
-                <a href="./html/produto-descricao.html" class="card__link">${item.link}</a>
+                <a href="./html/produto-descricao.html?id=${item.id}" class="card__link" data-tipo="link-produto">Ver Produto</a>
             </div>`
             document.querySelector('[data-tipo="starWars"]').appendChild(cardNovo)
         });
@@ -46,7 +46,7 @@ const botaoFechar = document.querySelector('[data-tipo="botaoFechar"]');
                 imgAlt: item.alt,
                 titulo: item.titulo,
                 preco: item.preco,
-                link: item.link
+                id: item.id
             }
 
             let cardNovo = document.createElement('div');
@@ -55,7 +55,7 @@ const botaoFechar = document.querySelector('[data-tipo="botaoFechar"]');
                 <img src="${item.img}" alt="${item.alt}" class="card__img">
                 <h3 class="card__nome">${item.titulo}</h3>
                 <span class="card__preco">${item.preco}</span>
-                <a href="./html/produto-descricao.html" class="card__link">${item.link}</a>
+                <a href="./html/produto-descricao.html?id=${item.id}" class="card__link" data-tipo="link-produto">Ver Produto</a>
             </div>`
             document.querySelector('[data-tipo="consoles"]').appendChild(cardNovo)
         });
@@ -65,7 +65,7 @@ const botaoFechar = document.querySelector('[data-tipo="botaoFechar"]');
                 imgAlt: item.alt,
                 titulo: item.titulo,
                 preco: item.preco,
-                link: item.link
+                id: item.id
             }
 
             let cardNovo = document.createElement('div');
@@ -74,14 +74,16 @@ const botaoFechar = document.querySelector('[data-tipo="botaoFechar"]');
                 <img src="${item.img}" alt="${item.alt}" class="card__img">
                 <h3 class="card__nome">${item.titulo}</h3>
                 <span class="card__preco">${item.preco}</span>
-                <a href="./html/produto-descricao.html" class="card__link">${item.link}</a>
+                <a href="./html/produto-descricao.html?id=${item.id}" class="card__link" data-tipo="link-produto">Ver Produto</a>
             </div>`
             document.querySelector('[data-tipo="diversos"]').appendChild(cardNovo)
         });
     })
+
 }
 
 exibeCards();
+
 
 lupa.addEventListener('click', ()=> {
     inputPesquisa.setAttribute("style", "display: block");

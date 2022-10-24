@@ -179,7 +179,7 @@
     // .....Pagina produtos.....
 
     .todosOsProdutos {
-        width: 92vw;
+        padding: 32px;
 
         &__cabecalho {
             display: flex;
@@ -194,6 +194,9 @@
 
         .card {
             width: 164px;
+            &__img {
+                width: 164px;
+            }
         }
     }
 
@@ -211,11 +214,21 @@
         &__descricao {
             padding: 0 0 0 16px;
         }
+       
 
     }
 
     .produtos__similares {
-        padding: 32px 0;
+        padding: 32px;
+
+        .card {
+
+            width: 164px;
+            &__img {
+                width: 164px;
+            }
+        }
+
     }
 
 }
