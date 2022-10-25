@@ -6,7 +6,7 @@ const botaoLogin = document.querySelector('[data-tipo="botao-login"]');
 const logo = document.querySelector('[data-tipo="logo"]');
 
 function exibeCards() {
-    fetch('http://localhost:3000/produtos')
+    fetch('https://translucent-tender-basket.glitch.me/produtos')
     .then(response => {
         return response.json();
     })
