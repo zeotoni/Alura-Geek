@@ -15,3 +15,21 @@
 <img src="https://user-images.githubusercontent.com/87879397/197628270-001ebe6d-adf8-4caf-aaa1-03337eda0734.png">
 <img src="https://user-images.githubusercontent.com/87879397/197632059-db0ed560-504b-4c68-9811-829f65025435.png">
 <img src="https://user-images.githubusercontent.com/87879397/197632085-98941817-a4e6-420e-bdcf-5c979b756eb9.png">
+
+<h2>Como testar</h2>
+
+* Instale o Json Server e utilize o comando json-server --watch db.json 
+* Acesse: https://alura-geek-two.vercel.app
+* Para o login utilize user@user.com  senha: Admin123
+
+<h2>Progresso</h2>
+
+* Cadastro de produto
+* Login
+* Validação de formulários
+* Listagem dinâmica de produtos
+* Pesquisa de produto
+* Responsividade 
+
+<br>Desenvolvido por www.linkedin.com/in/zeotoni
+
