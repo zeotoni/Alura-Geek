@@ -6,6 +6,7 @@ const inputCategoria = document.querySelector('[data-tipo="categoria"]');
 const inputTitulo = document.querySelector('[data-tipo="nome"]');
 const inputPreco = document.querySelector('[data-tipo="preco"]');
 const inputDescricao = document.querySelector('[data-tipo="descricao"]');
+const mensagemSucesso = document.querySelector('[data-tipo="mensagem-sucesso]');
 
 const inputs = document.querySelectorAll('input');
 inputs.forEach(input => {
@@ -31,8 +32,8 @@ inputDescricao.addEventListener('blur', (e) => {
 })
 
 
-formCadastroProduto.addEventListener('submit', () => {
-    // e.preventDefault();
+formCadastroProduto.addEventListener('submit', (e) => {
+    e.preventDefault();
 
     let novoProduto = {
         "categoria": inputCategoria.value,
@@ -54,4 +55,6 @@ formCadastroProduto.addEventListener('submit', () => {
         response => response.text()
     )
     .catch(error => console.log(error)); 
+    window.location.href = "produto-cadastrado.html";
+    mensagemSucesso.textContent = 'Produto cadastrado com sucesso!';  
 })
