@@ -1,7 +1,5 @@
 import { valida } from "./validaForm.js";
 
-// const botaoCadastrar = document.querySelector('[data-tipo="botao-cadastrar"]');
-
 const formCadastroProduto = document.querySelector('[data-tipo="form-produto"]');
 const inputImg = document.querySelector('[data-tipo="imagem"]');
 const inputCategoria = document.querySelector('[data-tipo="categoria"]');
@@ -20,22 +18,21 @@ inputs.forEach(input => {
             decimalSeparator: ',',
             thousandsSeparator: '.',
             cursor: 'end'
-        })
-        
+        }) 
     }
-
+    
     input.addEventListener('blur', (e)=> {
         valida(e.target);
     })
 })
 
-
 inputDescricao.addEventListener('blur', (e) => {
     valida(e.target)
 })
 
-formCadastroProduto.addEventListener('submit', (e) => {
-    e.preventDefault();
+
+formCadastroProduto.addEventListener('submit', () => {
+    // e.preventDefault();
 
     let novoProduto = {
         "categoria": inputCategoria.value,
@@ -45,7 +42,7 @@ formCadastroProduto.addEventListener('submit', (e) => {
         "preco": inputPreco.value,
         "descricao": inputDescricao.value
     }
-    const url = 'http://localhost:3000/produtos';
+    const url = 'https://smiling-longing-diamond.glitch.me/produtos';
     const options  = {
         method: 'POST',
         mode: 'cors',
@@ -56,5 +53,5 @@ formCadastroProduto.addEventListener('submit', (e) => {
     .then(
         response => response.text()
     )
-    .catch(error => console.log(error))
+    .catch(error => console.log(error)); 
 })

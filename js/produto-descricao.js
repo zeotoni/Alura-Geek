@@ -1,4 +1,5 @@
 import { valida } from "./validaForm.js";
+import { pesquisaProduto } from "./pesquisa.js";
 
 const searchButton = document.querySelector('[data-search-button]');
 const inputPesquisa = document.querySelector('[data-tipo="cabecalho-input"]');
@@ -12,23 +13,8 @@ searchButton.addEventListener("click", () => {
 	inputPesquisa.classList.toggle("hidden")
 })
 
-inputPesquisa.addEventListener('keyup', (e)=> {
+pesquisaProduto(inputPesquisa,'https://smiling-longing-diamond.glitch.me/produtos', "../html/produtosBuscados.html");
 
-    if(e.key === 'Enter') {
-        const produtoBuscado = inputPesquisa.value.toLowerCase();
-
-        fetch('http://localhost:3000/produtos')
-        .then(response => {
-            return response.json();
-        })
-        .then(response => {
-            const produtosSelecionados = response.filter(response => response.titulo.toLowerCase().includes(produtoBuscado));
-            const key = 'produtos';
-            localStorage.setItem(key, JSON.stringify(produtosSelecionados));
-            window.location.href = "produtosBuscados.html";
-        })
-    }
-})
 
 const inputs = document.querySelectorAll('input');
 
@@ -47,8 +33,9 @@ inputMensagem.addEventListener('blur', (e) => {
 const pegaUrl = new URL(window.location);
 const id = pegaUrl.searchParams.get('id');
 
+
 const exibeCardClicado = () =>{
-    fetch('http://localhost:3000/produtos')
+    fetch('https://smiling-longing-diamond.glitch.me/produtos')
     .then(response => {
         return response.json();
     })
@@ -109,6 +96,7 @@ const exibeCardClicado = () =>{
         });
 
     })
+    .catch(error => console.log(error))
 }
 
 exibeCardClicado();

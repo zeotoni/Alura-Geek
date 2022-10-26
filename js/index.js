@@ -1,18 +1,21 @@
 import { valida } from "./validaForm.js";
+import { pesquisaProduto } from "./pesquisa.js";
 
 const searchButton = document.querySelector('[data-search-button]');
 const inputPesquisa = document.querySelector('[data-tipo="cabecalho-input"]');
 const botaoLogin = document.querySelector('[data-tipo="botao-login"]');
 const logo = document.querySelector('[data-tipo="logo"]');
 
+
 function exibeCards() {
-    fetch('https://translucent-tender-basket.glitch.me/produtos')
+    fetch('https://smiling-longing-diamond.glitch.me/produtos')
     .then(response => {
         return response.json();
     })
     .then(response => {
         
         let cardValores = {
+            categoria: "",
             img: "",
             imgAlt: "",
             titulo: "",
@@ -23,6 +26,7 @@ function exibeCards() {
         response.filter(response => response.categoria == "star wars").forEach(item => {
             cardValores = {
                 img: item.img,
+                categoria: item.categoria,
                 imgAlt: item.alt,
                 titulo: item.titulo,
                 preco: item.preco,
@@ -78,7 +82,7 @@ function exibeCards() {
             document.querySelector('[data-tipo="diversos"]').appendChild(cardNovo)
         });
     })
-
+    .catch(error => console.log(error))
 }
 
 exibeCards();
@@ -90,24 +94,7 @@ searchButton.addEventListener("click", () => {
 	inputPesquisa.classList.toggle("hidden")
 })
 
-
-inputPesquisa.addEventListener('keyup', (e)=> {
-
-    if(e.key === 'Enter') {
-        const produtoBuscado = inputPesquisa.value.toLowerCase();
-
-        fetch('http://localhost:3000/produtos')
-        .then(response => {
-            return response.json();
-        })
-        .then(response => {
-            const produtosSelecionados = response.filter(response => response.titulo.toLowerCase().includes(produtoBuscado));
-            const key = 'produtos';
-            localStorage.setItem(key, JSON.stringify(produtosSelecionados));
-            window.location.href = "./html/produtosBuscados.html";
-        })
-    }
-})
+pesquisaProduto(inputPesquisa,'https://smiling-longing-diamond.glitch.me/produtos', "./html/produtosBuscados.html");
 
 
 const inputs = document.querySelectorAll('input');

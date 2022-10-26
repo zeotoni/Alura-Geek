@@ -1,5 +1,5 @@
-function exibeCards() {
-    fetch('http://localhost:3000/produtos')
+const exibeCards = ()=> {
+    fetch('https://smiling-longing-diamond.glitch.me/produtos')
     .then(response => {
         return response.json();
     })
@@ -38,6 +38,8 @@ function exibeCards() {
             document.querySelector('[data-tipo="produtos"]').appendChild(cardNovo)
         });
     })
+    .catch(error => console.log(error))
 }
 
 exibeCards();
+

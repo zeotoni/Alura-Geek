@@ -4,9 +4,9 @@
       "categoria": "star wars",
       "img": "./assets/img/produto1.png",
       "alt": "Imagem de uma caneca de star wars",
-      "titulo": "Caneca Cerâmica 3d Stormtrooper",
+      "titulo": "Caneca 3d Stormtrooper",
       "preco": "R$ 54,79",
-      "descricao": "Caneca Cerâmica 3d Stormtrooper, 500ml",
+      "descricao": "Caneca 3d Stormtrooper<br>400ml<br>Maerial: Porcelana<br>Largura: 23cm<br>Altura: 11cm<br>Profundidade: 10cm",
       "id": 1
     },
     {
@@ -15,7 +15,7 @@
       "alt": "Imagem de uma estátua de lego do Darth Vader",
       "titulo": "LEGO Star Wars - Capacete de Darth Vader",
       "preco": "R$ 587,90",
-      "descricao": "",
+      "descricao": "Lego Star Wars Coleção Capacete de Darth Vader 834 peças<br>Medidas (Comprimento x Largura x Altura): 14 x 15 x 20 cm<br>Não recomendado para menores de 5 anos",
       "id": 2
     },
     {
@@ -33,7 +33,7 @@
       "alt": "Imagem de uma action figure de stormtrooper",
       "titulo": "Action Figure Star Wars - StormTrooper",
       "preco": "R$ 65,00",
-      "descricao": "",
+      "descricao": "Action Figure Star Wars - StormTrooper<br>Marca: Hasbro<br>Série: Star Wars The Black Series<br>Tamanho da caixa: 24x14x6cm aproximadamente<br>Não recomendado para menores de 5 anos",
       "id": 4
     },
     {
@@ -42,7 +42,7 @@
       "alt": "Imagem de uma action figure do Baby Yoda Star Wars",
       "titulo": "Action Figure Star Wars - Baby Yoda",
       "preco": "R$ 300,00",
-      "descricao": "",
+      "descricao": "Abrace toda a fofura de Yoda com 50 anos de idade com esse lindo brinquedo de pelúcia de 11 polegadas. Ele pode parecer um Yoda bebê, mas essa criatura adorável é chamada de Grogu. Inspirado na série live-action da Disney+, O Mandaloriano, esse lindo brinquedo de pelúcia Star Wars leva à sua coleção um complemento sensível à Força. As imagens mostradas são apenas para fins ilustrativos. O produto real pode variar um pouco.<br>Idade recomendada: 3 anos acima.<br>Material: Plástico",
       "id": 5
     },
     {
@@ -51,7 +51,7 @@
       "alt": "Imagem de uma action figure do Kylo Ren",
       "titulo": "Action Figure Star Wars - Kylo Ren",
       "preco": "R$ 299,00",
-      "descricao": "",
+      "descricao": "Boneco de ação Kylo Ren. Dê um passeio no lado negro da força.<br>Articulado<br>Tamanho: Aproximadamente 38 cm de altura<br>Material: PVC<br>Não recomendado para menores de 5 anos",
       "id": 6
     },
     {
@@ -60,7 +60,7 @@
       "alt": "Imagem de um controle de xbox",
       "titulo": "Controle Sem Fio Xbox One Branco Com Bluetooth",
       "preco": "R$ 259,20",
-      "descricao": "",
+      "descricao": "Controle Sem Fio Xbox One<br>Conexão: Bluetooth e USB<br>Cor: Branco<br>Acompanha duas pilhas AAA",
       "id": 7
     },
     {
@@ -69,7 +69,7 @@
       "alt": "Imagem de um console nintendo NES",
       "titulo": "Console Nintendo NES 8 Bits",
       "preco": "R$ 1.186,00",
-      "descricao": "",
+      "descricao": "Este é um console de videogame de TV retrô dos anos 80 que colecionou muitos jogos do século passado.<br>620 jogos diferentes integrados.<br> Você pode facilmente encontrar de 30 a 40 jogos que fazem parte do seu jogo clássico favorito<br>1 * sistema clássico de entretenimento de console de mini-jogos, 2 * controlador FC clássico, 1 * cabo AV, 1 * carregador, 1 * manual do usuário. Fácil de colecionar e usar. Feito de plástico de alta qualidade, seguro e durável",
       "id": 8
     },
     {
@@ -78,7 +78,7 @@
       "alt": "Imagem de um console playstation 5",
       "titulo": "Console PlayStation 5",
       "preco": "R$ 5.499,90",
-      "descricao": "",
+      "descricao": "O console PS5 oferece novas possibilidades de jogabilidade que você nunca imaginou. Reproduza jogos para PS5 e PS4 em Blu-ray Disc. Além disso, você também pode baixar jogos digitais para PS5 e PS4 pela PlayStation Store. Experimente o carregamento extremamente rápido do SSD de ultra-velocidade, uma imersão mais profunda com suporte à resposta tátil, gatilhos adaptáveis e áudio 3D. Além de uma geração totalmente nova de jogos incríveis PlayStation.",
       "id": 9
     },
     {
@@ -87,7 +87,7 @@
       "alt": "Imagem de controle do nintendo Switch",
       "titulo": "Controle para Nintendo Switch - Vermelho e Azul",
       "preco": "R$ 299,90",
-      "descricao": "",
+      "descricao": "Os controles Joy-Con incluídos permitem total flexibilidade no jogo.<br>Um ou dois controles, na vertical ou na horizontal, encaixados no console ou não<br>Você pode jogar de diversas maneiras, dependendo do jogo<br>Este modelo inclui uma bateria com duração aproximada de 4, 5 a 9 horas",
       "id": 10
     },
     {
@@ -96,7 +96,7 @@
       "alt": "Imagem de um console xbox series x",
       "titulo": "Console Xbox Series X",
       "preco": "R$ 3.999,00",
-      "descricao": "",
+      "descricao": "Apresentamos o Xbox Series X, nosso console mais rápido e poderoso de todos os tempos. Jogue milhares de títulos de quatro gerações de consoles- todos os jogos têm melhor aparência e são melhor executados no Xbox Series X. No coração do Series X está a Xbox Velocity Architecture, que combina um SSD personalizado e software integrado para diminuir significativamente os tempos de carregamento dentro e fora do jogo.<br>Espaço de armazenamento:1 TB<br>ConexõesHDMI-In/Out<br>Wi-Fi embutido<br>Blu-ray<br>Voltagem: Bivolt<br>Conteúdo da Embalagem: Console Xbox Series X de 1TB, 1 controle sem fio Xbox, cabo HDMI e cabo de alimentação",
       "id": 11
     },
     {
@@ -105,7 +105,7 @@
       "alt": "Imagem de um Nintendo Game Boy Color",
       "titulo": "Nintendo Game Boy Color",
       "preco": "R$ 619,50",
-      "descricao": "",
+      "descricao": "Volte ao passado com esse game boy color retrô e se divirta com jogos clássicos.<br>Acompanha dois jogos",
       "id": 12
     },
     {
@@ -114,7 +114,7 @@
       "alt": "Imagem de uma camiseta atari",
       "titulo": "Camiseta Atari",
       "preco": "R$ 59,00",
-      "descricao": "",
+      "descricao": "A Camiseta Atari é feita com algodão macio e um logo clássico no peito.<br>Detalhes do Produto: Corte padrão para um toque descontraído e tranquilo.<br>Tecido: 100% algodão.<br>Lavável à máquina<br>Camiseta Masculina Tamanho P: Altura 67 cm x Largura 49 cm,Tamanho M Altura 69 cm x Largura 50 cm, Tamanho G Altura 72 cm x Largura 54 cm, Tamanho GG Altura 74 cm x Largura 58 cm<br>Boas compras.",
       "id": 13
     },
     {
@@ -123,7 +123,7 @@
       "alt": "Imagem de uma camiseta nintendo joystick",
       "titulo": "Camiseta Nintendo Joystick",
       "preco": "R$ 49,00",
-      "descricao": "",
+      "descricao": " Camiseta Nintendo é feita de algodão macio e uma estampa no peito.<br>Detalhes do Produto: Corte padrão para um toque descontraído e tranquilo.<br>Tecido: 100% algodão.<br>Lavável à máquina<br>Camiseta Masculina Tamanho P: Altura 67 cm x Largura 49 cm,Tamanho M Altura 69 cm x Largura 50 cm, Tamanho G Altura 72 cm x Largura 54 cm, Tamanho GG Altura 74 cm x Largura 58 cm<br>Boas compras.",
       "id": 14
     },
     {
@@ -132,7 +132,7 @@
       "alt": "Imagem de um action figure do sonic",
       "titulo": "Action Figure Sonic",
       "preco": "R$ 459,00",
-      "descricao": "",
+      "descricao": "Action Figure Sonic<br>Personagens com 2,5 polegadas de altura<br>Material: Plástico.<br>Colecionável",
       "id": 15
     },
     {
@@ -141,7 +141,7 @@
       "alt": "Imagem de um radio relógio retrô rosa",
       "titulo": "Rádio Relógio Retrô Rosa",
       "preco": "R$ 135,00",
-      "descricao": "",
+      "descricao": "Rádio relógio antigo. Adquira essa relíqua de colecionador.<br>Analógico<br>Rádio AM e FM<br>Despertador",
       "id": 16
     },
     {
@@ -150,7 +150,7 @@
       "alt": "Imagem de um Sony Playstation Vr",
       "titulo": "Sony Playstation Vr",
       "preco": "R$ 4.499,99",
-      "descricao": "",
+      "descricao": "Este pacote vem com um fone de ouvido PlayStation VR, uma câmera PlayStation e dois controles de movimento PlayStation Move.<br>Itens inclusos: Cabo de alimentação AC, Cabo HDMI, Cabo USB, Fone de ouvido PlayStation VR,Câmera PlayStation, PlayStation Move Motion Controller, Disco de demonstração de PlayStation VR, Adaptador AC",
       "id": 17
     },
     {
@@ -159,7 +159,7 @@
       "alt": "Imagem de uma fantasia mascote do pikachu",
       "titulo": "Fantasia Mascote Pikachu",
       "preco": "R$ 245,64",
-      "descricao": "",
+      "descricao": "Torne-se como seu personagem favorito do Pokemon, o encantador Pikachu em tons amarelo, preto e vermelho, com macacão amarelo, com rabo, e máscara/cabeça/capacete clássica do personagem.<br>Inclui Macacão, máscara luvas,imitação de pés.<br> Dimensões: P 1,60cm a 1,67cm, M - 1,69cm a 1,80cm, G - 1,81cm a 190cm<br>Material: plástico, espuma, poliestireno, pelúcia.",
       "id": 18
     }
   ]

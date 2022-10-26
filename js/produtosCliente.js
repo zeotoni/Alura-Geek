@@ -11,7 +11,7 @@ searchButton.addEventListener("click", () => {
 })
 
 const exibeProdutos = () => {
-    fetch('http://localhost:3000/produtos')
+    fetch('https://smiling-longing-diamond.glitch.me/produtos')
     .then(response => {
         return response.json();
     })
@@ -46,5 +46,6 @@ const exibeProdutos = () => {
             document.querySelector('[data-tipo="produtos"]').appendChild(cardNovo)
         });
     })
+    .catch(error => console.log(error))
 }
 exibeProdutos();
