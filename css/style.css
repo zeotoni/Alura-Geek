@@ -199,10 +199,7 @@ textarea::placeholder {
     gap: 16px;
     padding: 0 0 16px 16px;
   }
-  .produtos__card div:nth-of-type(5) {
-    display: none;
-  }
-  .produtos__card div:nth-of-type(6) {
+  .produtos__card div:nth-child(n+5) {
     display: none;
   }
   .produtos__card .card {
@@ -465,7 +462,7 @@ textarea::placeholder {
   }
   .produtos__similares {
     margin: 0 auto;
-    padding: 16px 0 0 16px;
+    padding: 16px;
     color: #464646;
   }
   .produtos__similares__titulo {
@@ -485,10 +482,7 @@ textarea::placeholder {
   .produtos__similares-card .card__img {
     width: 156px;
   }
-  .produtos__similares-card div:nth-of-type(5) {
-    display: none;
-  }
-  .produtos__similares-card div:nth-of-type(6) {
+  .produtos__similares-card div:nth-child(n+5) {
     display: none;
   }
 }

@@ -125,11 +125,7 @@
             gap: 16px;
             padding: 0 0 16px 16px;
 
-            div:nth-of-type(5) {
-                display: none;
-            }
-
-            div:nth-of-type(6) {
+            div:nth-child(n+5) {
                 display: none;
             }
 
@@ -458,7 +454,7 @@
 
     .produtos__similares {
         margin: 0 auto;
-        padding: 16px 0 0 16px;
+        padding: 16px;
         color: $cinza-escuro;
 
         &__titulo {
@@ -480,11 +476,7 @@
                 }
             }
 
-            div:nth-of-type(5) {
-                display: none;
-            }
-
-            div:nth-of-type(6) {
+            div:nth-child(n+5) {
                 display: none;
             }
 
