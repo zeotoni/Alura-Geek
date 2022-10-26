@@ -326,6 +326,7 @@ textarea::placeholder {
     width: 275px;
     height: 41px;
     margin-bottom: 10px;
+    padding-top: 8px;
   }
   .login input::placeholder {
     left: 12px;
