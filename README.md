@@ -17,8 +17,10 @@
 <img src="https://user-images.githubusercontent.com/87879397/197632085-98941817-a4e6-420e-bdcf-5c979b756eb9.png">
 
 <h2>Como testar</h2>
+* Acesse https://alura-geek-two.vercel.app/
+<h2>Ou rode localmente</h2>
 
-* Instale o Json Server e utilize o comando json-server --watch db.json 
+* Instale o Json Server e utilize o comando:  json-server --watch db.json 
 * Acesse: https://alura-geek-two.vercel.app
 * Para o login utilize user@user.com  senha: Admin123
 
