@@ -10,6 +10,11 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+// ...classe referente à função de imagem base64...
+.img-base64 {
+    display: none;
+}
+
 main {
     background-color: $bg-cinza;
 }

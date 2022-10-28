@@ -2,6 +2,10 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+.img-base64 {
+  display: none;
+}
+
 main {
   background-color: #F5F5F5;
 }
@@ -433,6 +437,9 @@ textarea::placeholder {
     position: absolute;
     right: 8px;
     top: 8px;
+  }
+  .todosOsProdutos__produtos .card__img {
+    height: 174px;
   }
   .produto-descricao {
     color: #464646;

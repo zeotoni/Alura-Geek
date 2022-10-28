@@ -29,7 +29,7 @@ const exibeCards = ()=> {
                     <img src="../assets/img/botao-excluir.svg" alt="Ícone de lixeira" class="card__icons-img" data-tipo="excluir-produto">
                     <img src="../assets/img/botao-editar.svg" alt="Ícone de lápis" class="card__icons-img">
                 </div>
-                <img src=".${item.img}" alt="${item.alt}" class="card__img">
+                <img src="${item.img}" alt="${item.alt}" class="card__img">
                 <h3 class="card__nome">${item.titulo}</h3>
                 <span class="card__preco">${item.preco}</span>
                 <a href="../html/produto-descricao.html?id=${item.id}" class="card__link" data-tipo="link-produto">Ver Produto</a>

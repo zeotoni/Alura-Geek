@@ -38,7 +38,7 @@ function exibeCardsBuscados() {
         let cardNovo = document.createElement('div');
         cardNovo.innerHTML =  
         `<div class="card">
-            <img src=".${item.img}" alt="${item.alt}" class="card__img">
+            <img src="${item.img}" alt="${item.alt}" class="card__img">
             <h3 class="card__nome">${item.titulo}</h3>
             <span class="card__preco">${item.preco}</span>
             <a href="../html/produto-descricao.html?id=${item.id}" class="card__link">Ver Produto</a>

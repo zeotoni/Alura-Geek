@@ -64,7 +64,7 @@ const exibeCardClicado = () =>{
         let cardNovo = document.createElement('section');
         cardNovo.innerHTML =  
         `<section class="produto-descricao">
-            <img src=".${produtoDetalhado.img}" alt="${produtoDetalhado.alt}" class="produto-descricao__img">
+            <img src="${produtoDetalhado.img}" alt="${produtoDetalhado.alt}" class="produto-descricao__img">
             <div class="produto-descricao__descricao">
                 <h2 class="produto-descricao__titulo">${produtoDetalhado.titulo}</h2>
                 <span class="produto-descricao__preco">${produtoDetalhado.preco}</span>
@@ -87,7 +87,7 @@ const exibeCardClicado = () =>{
             let cardNovo = document.createElement('div');
             cardNovo.innerHTML =  
             `<div class="card">
-                <img src=".${item.img}" alt="${item.alt}" class="card__img">
+                <img src="${item.img}" alt="${item.alt}" class="card__img">
                 <h3 class="card__nome">${item.titulo}</h3>
                 <span class="card__preco">${item.preco}</span>
                 <a href="../html/produto-descricao.html?id=${item.id}" class="card__link" data-tipo="link-produto">Ver Produto</a>

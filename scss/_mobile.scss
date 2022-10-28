@@ -406,11 +406,16 @@
             .card {
                 position: relative;
                 width: 156px;
+        
 
                 &__icons {
                     position: absolute;
                     right: 8px;
                     top: 8px;
+                }
+
+                &__img {
+                    height: 174px;
                 }
             }
 
