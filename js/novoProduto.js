@@ -30,26 +30,19 @@ inputDescricao.addEventListener('blur', (e) => {
     valida(e.target)
 })
 
-const uma = document.getElementById("ppp")
+let imgBase64 = '';
 
 inputImg.addEventListener('change', function() {
 
     const imagem = inputImg.files;
 
     if(imagem.length > 0) {
-        var lerArquivo = new FileReader();
+        const lerArquivo = new FileReader();
         lerArquivo.onload = function(e) {
-            var x = lerArquivo.result;
-            document.getElementById("img-local").src = x;
-            // document.getElementById("img-local")
-            uma.innerHTML = x;
-            // console.log(x)
-            
+            imgBase64 = lerArquivo.result;
         }
         lerArquivo.readAsDataURL(imagem[0])
-        return uma;
     }
-    
 })
 
 
@@ -58,12 +51,13 @@ formCadastroProduto.addEventListener('submit', (e) => {
     
     let novoProduto = {
         "categoria": inputCategoria.value,
-        "img": uma.textContent,
+        "img": imgBase64,
         "alt": inputTitulo.value,
         "titulo": inputTitulo.value,
         "preco": inputPreco.value,
         "descricao": inputDescricao.value
     }
+    console.log(novoProduto)
     const url = 'https://smiling-longing-diamond.glitch.me/produtos';
     const options  = {
         method: 'POST',

@@ -5,6 +5,7 @@ const searchButton = document.querySelector('[data-search-button]');
 const inputPesquisa = document.querySelector('[data-tipo="cabecalho-input"]');
 const botaoLogin = document.querySelector('[data-tipo="botao-login"]');
 const logo = document.querySelector('[data-tipo="logo"]');
+const botaoDelete = document.querySelector('[data-tipo="apagar"]');
 
 searchButton.addEventListener("click", () => {
 	botaoLogin.classList.toggle("hidden")
@@ -100,6 +101,16 @@ const exibeCardClicado = () =>{
 }
 
 exibeCardClicado();
+
+botaoDelete.addEventListener('click', () =>{
+    console.log(id)
+    fetch('https://smiling-longing-diamond.glitch.me/produtos/'+id, {
+        method: 'DELETE'
+    })
+    .then(res => res.json()) // or res.json()
+    .then(res => console.log(res))
+    .catch(error => console.log(error)); 
+})
 
 
 

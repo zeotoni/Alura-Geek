@@ -754,6 +754,7 @@ textarea::placeholder {
     width: 176px;
   }
   .produtos .card__img {
+    height: 174px;
     width: 176px;
   }
   .produtos .card a:hover {
