@@ -37,11 +37,14 @@ inputImg.addEventListener('change', function() {
     const imagem = inputImg.files;
 
     if(imagem.length > 0) {
+        const imagemSelecionada = imagem[0]
+
         const lerArquivo = new FileReader();
+
         lerArquivo.onload = function(e) {
-            imgBase64 = lerArquivo.result;
+            imgBase64 = e.target.result;
         }
-        lerArquivo.readAsDataURL(imagem[0])
+        lerArquivo.readAsDataURL(imagemSelecionada)
     }
 })
 
