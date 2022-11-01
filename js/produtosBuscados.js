@@ -48,7 +48,7 @@ function exibeCardsBuscados() {
 }
 exibeCardsBuscados();
 
-pesquisaProduto(inputPesquisa,'https://smiling-longing-diamond.glitch.me/produtos', "produtosBuscados.html");
+pesquisaProduto(inputPesquisa,'https://db-geek.herokuapp.com/produtos', "produtosBuscados.html");
 
 
 const inputs = document.querySelectorAll('input');
