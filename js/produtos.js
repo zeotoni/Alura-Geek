@@ -1,5 +1,5 @@
 const exibeCards = ()=> {
-    fetch('https://db-geek.herokuapp.com/produtos')
+    fetch('https://smiling-longing-diamond.glitch.me/produtos')
     .then(response => {
         return response.json();
     })

@@ -61,7 +61,7 @@ formCadastroProduto.addEventListener('submit', (e) => {
         "descricao": inputDescricao.value
     }
     console.log(novoProduto)
-    const url = 'https://db-geek.herokuapp.com/produtos';
+    const url = 'https://smiling-longing-diamond.glitch.me/produtos';
     const options  = {
         method: 'POST',
         mode: 'cors',

@@ -14,7 +14,7 @@ searchButton.addEventListener("click", () => {
 	inputPesquisa.classList.toggle("hidden")
 })
 
-pesquisaProduto(inputPesquisa,'https://db-geek.herokuapp.com/produtos', "../html/produtosBuscados.html");
+pesquisaProduto(inputPesquisa,'https://smiling-longing-diamond.glitch.me/produtos', "../html/produtosBuscados.html");
 
 
 const inputs = document.querySelectorAll('input');
@@ -36,7 +36,7 @@ const id = pegaUrl.searchParams.get('id');
 
 
 const exibeCardClicado = () =>{
-    fetch('https://db-geek.herokuapp.com/produtos')
+    fetch('https://smiling-longing-diamond.glitch.me/produtos')
     .then(response => {
         return response.json();
     })
@@ -101,16 +101,6 @@ const exibeCardClicado = () =>{
 }
 
 exibeCardClicado();
-
-botaoDelete.addEventListener('click', () =>{
-    console.log(id)
-    fetch('https://db-geek.herokuapp.com/produtos/'+id, {
-        method: 'DELETE'
-    })
-    .then(res => res.json()) // or res.json()
-    .then(res => console.log(res))
-    .catch(error => console.log(error)); 
-})
 
 
 
